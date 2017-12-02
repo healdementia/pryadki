@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+b {
+  font-weight: 400;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -32,4 +36,13 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.unbutton {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-shadow: none;
+  border: 0;
+  outline: 0;
 }

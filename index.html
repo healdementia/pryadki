@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,369 @@
     </script>
     <script src="js/picturefill.js" async></script>
   </head>
+  
   <body>
-    <h1>Прядки в порядке</h1>
+    
+    <header class="page-header">
+      
+      <nav class="main-nav">
+        <div class="container">
+          <img class="main-nav__logo" src="img/logo.svg" width="265" height="50">
+          <ul class="main-nav__menu list">
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Записаться онлайн</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Услуги и цены</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Новости</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Вакансии</a>
+            </li>
+          </ul>
+          <div class="main-nav__contact">
+            <b class="main-nav__tel">8(800)555&nbsp;22&nbsp;22</b>
+            <div class="main-nav__city city-select">
+              <input class="city-select__dropdown unbutton" type="button">Ижевск</input>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="intro">
+        <b class="intro__headline">Больше, чем просто стрижки</b>
+        <p class="intro__subline">Онлайн-запись к лучшему мастеру <span>за 8 секунд</span></p>
+        <button class="intro__book button" type="button">Записаться на услугу</button>
+      </section>
+      
+    </header>
+    
+    <main class="page-main">
+      
+      <h1 class="visually-hidden">Прядки в Порядке - парикмахерские в Ижевске</h1>
+      
+      <section class="promo">
+        <div class="container">
+          <h2 class="visually-hidden">Прядки в Порядке - скидки и акции</h2>
+          <div class="promo__current current">
+            <h3 class="promo__headline current__headline headline">Предложение месяца</h3>
+            <div class="current__info">
+              <p class="current__text">При окрашивании 10-20 декабря укладка в подарок!</p>
+              <button class="current__book button" type="button">Записаться</button>
+            </div>
+          </div>
+          <div class="promo__permanent permanent">
+            <h3 class="promo__headline permanent__headline headline">Постоянные акции</h3>
+            <ul class="permanent__list">
+              <li class="permanent__item permanent__item--sale">
+                <span>Приходите в выгодные дни и получайте скидки на некоторые услуги</span>
+              </li>
+              <li class="permanent__item permanent__item--scissors">
+                <span>Каждая 6-я стрижка бесплатно! (или маникюр в подарок)</span>
+              </li>
+              <li class="permanent__item permanent__item--birthday">
+                <span>Всем именинникам&nbsp;&mdash;СКИДКА 10%</span>
+              </li>
+            </ul>
+            <button class="permanent__see-all button" type="button">Записаться</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="price">
+        <div class="container">
+          <h2 class="price__headline headline">Услуги и цены</h3>
+          <div class="price__body">
+            <div class="price__section">
+              <div class="price__block">
+                <h4 class="price__service-name headline">Женский зал</h4>
+                <ul class="price__list list">
+                  <li class="price__item list__item">Стрижки</li>
+                  <li class="price__item list__item">Укладка и причёски</li>
+                  <li class="price__item list__item">Восстановление волос</li>
+                  <li class="price__item list__item">Макияж и брови</li>
+                  <li class="price__item list__item">Дополнительные услуги</li>
+                </ul>
+              </div>
+              <div class="price__block">
+                <h4 class="price__service-name headline">Окрашивание волос</h4>
+                <ul class="price__list list">
+                  <li class="price__item list__item">Окрашивание</li>
+                  <li class="price__item list__item">Дополнительные услуги</li>
+                </ul>
+              </div>
+            </div>
+            <div class="price__section">
+              <div class="price__block">
+                <h4 class="price__service-name headline">Мужской зал</h4>
+                <ul class="price__list list">
+                  <li class="price__item list__item">Стрижки</li>
+                  <li class="price__item list__item">Усы и борода</li>
+                  <li class="price__item list__item">Дополнительные услуги</li>
+                </ul>
+              </div>
+              <div class="price__block">
+                <h4 class="price__service-name headline">Прочие услуги</h4>
+                <ul class="price__list list">
+                  <li class="price__item list__item">Массаж</li>
+                  <li class="price__item list__item">Депиляция</li>
+                  <li class="price__item list__item">Косметический кабинет</li>
+                  <li class="price__item list__item">Солярий</li>
+                </ul>
+              </div>
+            </div>
+            <div class="price__section">
+              <div class="price__block">
+                <h4 class="price__service-name headline">Маникюрный кабинет</h4>
+                <ul class="price__list list">
+                  <li class="price__item list__item">Маникюр</li>
+                  <li class="price__item list__item">Педикюр</li>
+                  <li class="price__item list__item">Укрепление</li>
+                  <li class="price__item list__item">Парафинотерапия</li>
+                  <li class="price__item list__item">Дополнительные услуги</li>
+                </ul>
+              </div>
+              <div class="price__block">
+                <h4 class="price__service-name headline">Детский зал</h4>
+                <ul class="price__list list">
+                  <li class="price__item list__item">Стрижки</li>
+                  <li class="price__item list__item">Дополнительные услуги</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="nearest">
+        <div class="container">
+          <h2 class="nearest__headline headline">Найдите ближайший от вас салон</h2>
+          <div class="nearest__city city-select">
+            <input class="city-select__dropdown unbutton" type="button">Ижевск</input>
+          </div>
+          <h5 class="nearest__subline">Выберите направление:</h5>
+          <ul class="nearest__list list">
+            <li class="nearest__item nearest__item--hairdressing list__item">Парикмахерская</li>
+            <li class="nearest__item nearest__item--beauty list__item">Косметика</li>
+            <li class="nearest__item nearest__item--make-up list__item">Макияж и брови</li>
+            <li class="nearest__item nearest__item--massage list__item">Массаж</li>
+            <li class="nearest__item nearest__item--nails list__item">Маникюр</li>
+            <li class="nearest__item nearest__item--epilation list__item">Депиляция</li>
+            <li class="nearest__item nearest__item--sun-deck list__item">Солярий</li>
+            <li class="nearest__item nearest__item--face-n-piercing list__item">Чистка лица и пирсинг</li>
+          </ul>
+          <h5 class="nearest__subline">Салоны, которые вам подходят:</h5>
+          <div class="nearest__saloons saloons">
+            <div class="saloons__loci">
+              <div class="saloons__locus">
+                <ul class="saloons__info list">
+                  <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
+                  <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
+                  <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
+                </ul>
+                <button class="sallons__book button" type="button">Записаться</button>
+              </div>
+              <div class="saloons__locus">
+                <ul class="saloons__info list">
+                  <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
+                  <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
+                  <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
+                </ul>
+                <button class="sallons__book button" type="button">Записаться</button>
+              </div>
+              <div class="saloons__locus">
+                <ul class="saloons__info list">
+                  <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
+                  <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
+                  <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
+                </ul>
+                <button class="sallons__book button" type="button">Записаться</button>
+              </div>
+            </div>
+            <div class="saloons__map"></div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__headline headline">Отзывы</h2>
+          <div class="feedback__rating rating">
+            <span class="rating__text">Общая оценка: </span>
+            <span class="rating__star"></span>
+            <span class="rating__star"></span>
+            <span class="rating__star"></span>
+            <span class="rating__star"></span>
+            <span class="rating__star"></span>
+          </div>
+          <ul class="feedback__list list">
+            <li class="feedback__item list__item">
+              <b class="feedback__name">Михаил</b>
+              <p class="feedback__text">Отличное место и приветливый персонал. Всем советую!</p>
+              <div class="feedback__small-rating rating">
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+              </div>
+            </li>
+            <li class="feedback__item list__item">
+              <b class="feedback__name">Светлана</b>
+              <p class="feedback__text">Люблю эту парикмахерскую. Девочки-молодцы!</p>
+              <div class="feedback__small-rating rating">
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+              </div>
+            </li>
+            <li class="feedback__item list__item">
+              <b class="feedback__name">Михаил</b>
+              <p class="feedback__text">Отличное место и приветливый персонал. Всем советую!</p>
+              <div class="feedback__small-rating rating">
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+                <span class="rating__star rating__star--small"></span>
+              </div>
+            </li>
+          </ul>
+          <div class="feedback__footer">
+            <button class="feedback__leave-feedback button" type="button">Оставить отзыв</button>
+            <button class="feedback__more button" type="button">Ещё отзывы</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="subscription">
+        <h2 class="visually-hidden">Прядки в Порядке - следите за нами в соцсетях</h2>
+        <div class="container">
+          <div class="subscription__instagram">
+            <h3 class="subscription__headline headline">Фотографии наших работ</h3>
+            <img class="subscription__mockup" src="img/mockup-instagram.jpg" width="544" height="627">
+            <button class="subscription__subscribe button" type="button">Подписаться</button>
+          </div>
+          <div class="subscription__vkontakte">
+            <h3 class="subscription__headline headline">Мы ВКонтакте</h3>
+            <img class="subscription__mockup" src="img/mockup-vkontakte.jpg" width="488" height="644">
+            <button class="subscription__subscribe button" type="button">Подписаться</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="secret-shopper">
+        <div class="container">
+          <h2 class="secret-shopper__headline">Помогите нам стать лучше!</h2>
+          <p class="secret-shopper__subline">Запишитесь в "тайные покупатели" и проведите проверку вашей любимой парикмахерской. Вознаграждение гарантируем!</p>
+          <form class="secret-shopper__form form">
+            <div class="form__inputs">
+              <div class="form__group">
+                <label class="secret-shopper__label form__label" for="office">Выберите офис</label>
+                <input class="secret-shopper__input form__input" type="text" id="office" name="office" required>
+              </div>
+              <div class="form__group">
+                <label class="secret-shopper__label form__label" for="email">Введите E-mail</label>
+                <input class="secret-shopper__input form__input" type="email" id="email" name="email" required>
+              </div>
+              <div class="form__group agree">
+                <input class="agree__input form__input" type="checkbox" id="agree" name="agree">
+                <label class="agree__label form__label">
+                  <span class="agree__checkbox"></span>
+                  <p class="agree__conditions-text">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a href="#">Условиями</a></p>
+                </label>
+              </div>
+            </div>
+            <button class="secret-shopper__submit button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      
+    </main>
+    
+    <footer class="page-footer">
+      
+      <section class="footer">
+        <div class="container">
+          <div class="footer__block">
+            <h5 class="footer__headline">Услуги</h5>
+            <ul class="footer__list list">
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Женский зал</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Мужской зал</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Детский зал</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Маникюр</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h5 class="footer__headline">О компании</h5>
+            <ul class="footer__list list">
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Франшиза</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Контакты компании</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Солярий</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h5 class="footer__headline">Клиенту</h5>
+            <ul class="footer__list list">
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Скидки и акции</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Запись онлайн</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Новости</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bottom">
+        <div class="container">
+          <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
+          <div class="bottom__social">
+            <span class="bottom__text">Мы в социальных сетях: </span>
+            <ul class="bottom__list social list">
+              <li class="social__item list__item">
+                <a class="social__link social__link--instagram" href="#" title="Наш профиль в Instagram"></a>
+              </li>
+              <li class="social__item list__item">
+                <a class="social__link social__link--vkontakte" href="#" title="Наш профиль ВКонтакте"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+    </footer>
+    
   </body>
+  
 </html>
