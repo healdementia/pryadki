@@ -1,0 +1,15 @@
+.promo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promo__headline {
+  margin-bottom: 40px;
+}

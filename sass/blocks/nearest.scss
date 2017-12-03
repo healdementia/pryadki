@@ -1,0 +1,99 @@
+.nearest {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+
+.nearest__header {
+  text-align: center;
+}
+
+.nearest__headline {
+  margin-bottom: 15px;
+}
+
+.nearest__subline {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.nearest__list {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.nearest__group {
+  flex-basis: auto;
+  width: 245px;
+  margin-bottom: 15px;
+}
+
+.nearest__item {
+  display: block;
+  min-height: 26px;
+  padding-right: 5px;
+  padding-left: 48px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: $text-color;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &--hairdressing {
+    background-image: url("../img/icon-hairdressing.svg");
+    background-size: 29px 23px;
+  }
+
+  &--beauty {
+    background-image: url("../img/icon-beauty.svg");
+    background-size: 20px 18px;
+  }
+
+  &--make-up {
+    background-image: url("../img/icon-make-up.svg");
+    background-size: 22px 22px;
+  }
+
+  &--massage {
+    background-image: url("../img/icon-massage.svg");
+    background-size: 18px 23px;
+  }
+
+  &--nails {
+    background-image: url("../img/icon-nails.svg");
+    background-size: 15px 26px;
+  }
+
+  &--epilation {
+    background-image: url("../img/icon-epilation.svg");
+    background-size: 21px 20px;
+  }
+
+  &--sun-desk {
+    background-image: url("../img/icon-sun-desk.svg");
+    background-size: 27px 27px;
+  }
+
+  &--face-n-piercing {
+    background-image: url("../img/icon-face-n-piercing.svg");
+    background-size: 20px 26px;
+  }
+
+  &:hover {
+    color: $theme-color;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    color: darken($theme-color, 5%);
+  }
+}
+
+.nearest__input[type="checkbox"]:checked ~ .nearest__item {
+  font-family: $bold-font;
+}

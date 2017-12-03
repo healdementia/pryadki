@@ -1,0 +1,33 @@
+.subscription {
+  padding-top: 95px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+
+.subscription__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.subscription__instagram {
+  width: 600px;
+  text-align: center;
+}
+
+.subscription__vkontakte {
+  width: 488px;
+  text-align: center;
+}
+
+.subscription__headline {
+  margin-bottom: 40px;
+}
+
+.subscription__mockup {
+  display: inline-block;
+}
+
+.subscription__subscribe {
+  margin-top: 40px;
+}

@@ -1,0 +1,70 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list__item {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 17px 34px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $black-font;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $theme-color;
+  border: 0;
+  border-radius: 100px;
+  outline: 0;
+
+  &:hover {
+    background-color: darken($theme-color, 5%);
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    background-color: darken($theme-color, 10%);
+  }
+}
+
+.headline {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 46px;
+  font-family: $black-font;
+  letter-spacing: 0.3px;
+  color: $headline-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 21px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &::before {
+    left: -42px;
+    background-image: url("../img/icon-curl-left.svg");
+  }
+
+  &::after {
+    right: -42px;
+    background-image: url("../img/icon-curl-right.svg");
+  }
+}

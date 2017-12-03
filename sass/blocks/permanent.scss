@@ -1,0 +1,65 @@
+.permanent {
+  width: 470px;
+  text-align: center;
+}
+
+.permanent__item {
+  width: 100%;
+  min-height: 173px;
+  margin-bottom: 18px;
+  padding: 39px 24px;
+  background-color: #fafafa;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.permanent__info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 94px;
+  padding-left: 186px;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 139px;
+    width: 6px;
+    height: 84px;
+    background-color: $theme-color;
+  }
+
+  &--sale {
+    background-image: url("../img/icon-sale.svg");
+    background-position: 17px 5px;
+    background-size: 90px 80px;
+  }
+
+  &--scissors {
+    background-image: url("../img/icon-scissors.svg");
+    background-position: left 6px;
+    background-size: 99px 81px;
+  }
+
+  &--birthday {
+    background-image: url("../img/icon-birthday.svg");
+    background-position: 20px top;
+    background-size: 77px 94px;
+  }
+}
+
+.permanent__see-all {
+  margin-top: 50px;
+  padding: 17px 34px;
+  font-size: 16px;
+  line-height: 24px;
+}

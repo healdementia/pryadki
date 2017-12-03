@@ -1,0 +1,68 @@
+.price {
+  padding-top: 95px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-color: $theme-color;
+  background-image: url("../img/index-woman-head.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 203px;
+  background-size: 417px 706px;
+}
+
+.price__headline {
+  margin-bottom: 51px;
+  color: #ffffff;
+}
+
+.price__headline::before,
+.price__headline::after {
+  display: none;
+}
+
+.price__body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.price__block {
+  flex-basis: auto;
+  width: 368px;
+  margin-bottom: 30px;
+  padding: 50px 45px;
+  background-color: #ffffff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.price__service-name {
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-transform: none;
+
+  &::before,
+  &::after {
+    height: 24px;
+  }
+}
+
+.price__item {
+  padding: 15px 0;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  background-image: url("../img/icon-price-toggle.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 19px 19px;
+  border-bottom: 1px solid #171d2a;
+
+  &:last-child {
+    border: 0;
+  }
+}

@@ -1,0 +1,31 @@
+.bottom {
+  background-color: #ffffff;
+}
+
+.bottom__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100px;
+}
+
+.bottom__logo {
+  width: 265px;
+  height: auto;
+}
+
+.bottom__social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bottom__text {
+  margin-right: 41px;
+  font-size: 20px;
+  line-height: 41px;
+  font-family: $bold-font;
+  letter-spacing: 0.2px;
+  color: #232639;
+}

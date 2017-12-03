@@ -1,0 +1,23 @@
+.rating__text {
+  display: inline-block;
+  margin-right: 24px;
+  font-size: 28px;
+  line-height: 22px;
+  font-family: $bold-font;
+  color: #ffffff;
+}
+
+.rating__star {
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/icon-rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--small {
+    width: 16px;
+    height: 15px;
+  }
+}

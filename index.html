@@ -11,14 +11,17 @@
     </script>
     <script src="js/picturefill.js" async></script>
   </head>
-  
+
   <body>
-    
+
     <header class="page-header">
-      
+
       <nav class="main-nav">
-        <div class="container">
-          <img class="main-nav__logo" src="img/logo.svg" width="265" height="50">
+        <div class="container main-nav__container">
+          <div class="main-nav__logo">
+            <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50">
+          </div>
+          <span class="main-nav__toggle"></span>
           <ul class="main-nav__menu list">
             <li class="main-nav__item list__item">
               <a class="main-nav__link" href="#">Записаться онлайн</a>
@@ -37,53 +40,60 @@
             </li>
           </ul>
           <div class="main-nav__contact">
-            <b class="main-nav__tel">8(800)555&nbsp;22&nbsp;22</b>
-            <div class="main-nav__city city-select">
-              <input class="city-select__dropdown unbutton" type="button">Ижевск</input>
+            <b class="main-nav__tel">8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22</b>
+            <div class="nearest__city city-select">
+              <span class="city-select__dropdown">Ижевск</span>
             </div>
           </div>
         </div>
       </nav>
+
       <section class="intro">
-        <b class="intro__headline">Больше, чем просто стрижки</b>
-        <p class="intro__subline">Онлайн-запись к лучшему мастеру <span>за 8 секунд</span></p>
-        <button class="intro__book button" type="button">Записаться на услугу</button>
-      </section>
-      
-    </header>
-    
-    <main class="page-main">
-      
-      <h1 class="visually-hidden">Прядки в Порядке - парикмахерские в Ижевске</h1>
-      
-      <section class="promo">
         <div class="container">
+          <div class="intro__container">
+            <b class="intro__headline">Больше, чем просто стрижки</b>
+            <p class="intro__subline">Онлайн-запись к лучшему мастеру<br><span>за 8 секунд</span></p>
+            <button class="intro__book button" type="button">Записаться на услугу</button>
+          </div>
+        </div>
+      </section>
+
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Прядки в Порядке - парикмахерские в Ижевске</h1>
+
+      <section class="promo">
+        <div class="container promo__container">
           <h2 class="visually-hidden">Прядки в Порядке - скидки и акции</h2>
           <div class="promo__current current">
             <h3 class="promo__headline current__headline headline">Предложение месяца</h3>
-            <div class="current__info">
-              <p class="current__text">При окрашивании 10-20 декабря укладка в подарок!</p>
-              <button class="current__book button" type="button">Записаться</button>
+            <div class="current__body">
+              <div class="current__info">
+                <p class="current__text">При окрашивании 10&mdash;20 декабря укладка в подарок!</p>
+                <button class="current__book button" type="button">Записаться</button>
+              </div>
             </div>
           </div>
           <div class="promo__permanent permanent">
             <h3 class="promo__headline permanent__headline headline">Постоянные акции</h3>
-            <ul class="permanent__list">
-              <li class="permanent__item permanent__item--sale">
-                <span>Приходите в выгодные дни и получайте скидки на некоторые услуги</span>
+            <ul class="permanent__list list">
+              <li class="permanent__item list__item">
+                <span class="permanent__info permanent__info--sale">Приходите в выгодные дни и получайте скидки на некоторые услуги</span>
               </li>
-              <li class="permanent__item permanent__item--scissors">
-                <span>Каждая 6-я стрижка бесплатно! (или маникюр в подарок)</span>
+              <li class="permanent__item list__item">
+                <span class="permanent__info permanent__info--scissors">Каждая 6-я стрижка бесплатно! (или маникюр в подарок)</span>
               </li>
-              <li class="permanent__item permanent__item--birthday">
-                <span>Всем именинникам&nbsp;&mdash;СКИДКА 10%</span>
+              <li class="permanent__item list__item">
+                <span class="permanent__info permanent__info--birthday">Всем именинникам&nbsp;&mdash; СКИДКА 10%</span>
               </li>
             </ul>
-            <button class="permanent__see-all button" type="button">Записаться</button>
+            <button class="permanent__see-all button" type="button">Смотреть все акции</button>
           </div>
         </div>
       </section>
-      
+
       <section class="price">
         <div class="container">
           <h2 class="price__headline headline">Услуги и цены</h3>
@@ -148,57 +158,92 @@
           </div>
         </div>
       </section>
-      
+
       <section class="nearest">
         <div class="container">
-          <h2 class="nearest__headline headline">Найдите ближайший от вас салон</h2>
+          <header class="nearest__header">
+            <h2 class="nearest__headline headline">Найдите ближайший от вас салон</h2>
+          </header>
           <div class="nearest__city city-select">
-            <input class="city-select__dropdown unbutton" type="button">Ижевск</input>
+            <span class="city-select__dropdown">Ижевск</span>
           </div>
           <h5 class="nearest__subline">Выберите направление:</h5>
-          <ul class="nearest__list list">
-            <li class="nearest__item nearest__item--hairdressing list__item">Парикмахерская</li>
-            <li class="nearest__item nearest__item--beauty list__item">Косметика</li>
-            <li class="nearest__item nearest__item--make-up list__item">Макияж и брови</li>
-            <li class="nearest__item nearest__item--massage list__item">Массаж</li>
-            <li class="nearest__item nearest__item--nails list__item">Маникюр</li>
-            <li class="nearest__item nearest__item--epilation list__item">Депиляция</li>
-            <li class="nearest__item nearest__item--sun-deck list__item">Солярий</li>
-            <li class="nearest__item nearest__item--face-n-piercing list__item">Чистка лица и пирсинг</li>
-          </ul>
+          <form class="nearest__list">
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="hairdressing" name="hairdressing" checked>
+              <label class="nearest__item nearest__item--hairdressing" for="hairdressing">Парикмахерская</label>
+            </div>
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="beauty" name="beauty">
+              <label class="nearest__item nearest__item--beauty" for="beauty">Косметика</label>
+            </div>
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="make-up" name="make-up">
+              <label class="nearest__item nearest__item--make-up" for="make-up">Макияж и брови</label>
+            </div>
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="massage" name="massage">
+              <label class="nearest__item nearest__item--massage" for="massage">Массаж</label>
+            </div>
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="nails" name="nails">
+              <label class="nearest__item nearest__item--nails" for="nails">Маникюр</label>
+            </div>
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="epilation" name="epilation">
+              <label class="nearest__item nearest__item--epilation" for="epilation">Депиляция</label>
+            </div>
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="sun-desk" name="sun-desk">
+              <label class="nearest__item nearest__item--sun-desk" for="sun-desk">Солярий</label>
+            </div>
+            <div class="nearest__group">
+              <input class="nearest__input visually-hidden" type="checkbox" id="face-n-piercing" name="face-n-piercing">
+              <label class="nearest__item nearest__item--face-n-piercing" for="face-n-piercing">Чистка лица и пирсинг</label>
+            </div>
+          </form>
           <h5 class="nearest__subline">Салоны, которые вам подходят:</h5>
           <div class="nearest__saloons saloons">
-            <div class="saloons__loci">
-              <div class="saloons__locus">
-                <ul class="saloons__info list">
-                  <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
-                  <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
-                  <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
-                </ul>
-                <button class="sallons__book button" type="button">Записаться</button>
+            <form class="saloons__loci">
+              <div class="saloons__group">
+                <input class="saloons__input visually-hidden" type="radio" id="address-1" name="saloons" checked>
+                <label class="saloons__locus" for="address-1">
+                  <ul class="saloons__info list">
+                    <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
+                    <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
+                    <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
+                  </ul>
+                  <button class="sallons__book button" type="button">Записаться</button>
+                </label>
               </div>
-              <div class="saloons__locus">
-                <ul class="saloons__info list">
-                  <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
-                  <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
-                  <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
-                </ul>
-                <button class="sallons__book button" type="button">Записаться</button>
+              <div class="saloons__group">
+                <input class="saloons__input visually-hidden" type="radio" id="address-2" name="saloons">
+                <label class="saloons__locus" for="address-2">
+                  <ul class="saloons__info list">
+                    <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
+                    <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
+                    <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
+                  </ul>
+                  <button class="sallons__book button" type="button">Записаться</button>
+                </label>
               </div>
-              <div class="saloons__locus">
-                <ul class="saloons__info list">
-                  <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
-                  <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
-                  <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
-                </ul>
-                <button class="sallons__book button" type="button">Записаться</button>
+              <div class="saloons__group">
+                <input class="saloons__input visually-hidden" type="radio" id="address-3" name="saloons">
+                <label class="saloons__locus" for="address-3">
+                  <ul class="saloons__info list">
+                    <li class="saloons__item saloons__item--address list__item">ул. Удмуртская, 255</li>
+                    <li class="saloons__item saloons__item--tel list__item">42-55-43</li>
+                    <li class="saloons__item saloons__item--hours list__item">с 9:00 &mdash; до 18:00</li>
+                  </ul>
+                  <button class="sallons__book button" type="button">Записаться</button>
+                </label>
               </div>
-            </div>
+            </form>
             <div class="saloons__map"></div>
           </div>
         </div>
       </section>
-      
+
       <section class="feedback">
         <div class="container">
           <h2 class="feedback__headline headline">Отзывы</h2>
@@ -251,10 +296,10 @@
           </div>
         </div>
       </section>
-      
+
       <section class="subscription">
         <h2 class="visually-hidden">Прядки в Порядке - следите за нами в соцсетях</h2>
-        <div class="container">
+        <div class="container subscription__container">
           <div class="subscription__instagram">
             <h3 class="subscription__headline headline">Фотографии наших работ</h3>
             <img class="subscription__mockup" src="img/mockup-instagram.jpg" width="544" height="627">
@@ -267,10 +312,10 @@
           </div>
         </div>
       </section>
-      
+
       <section class="secret-shopper">
         <div class="container">
-          <h2 class="secret-shopper__headline">Помогите нам стать лучше!</h2>
+          <h2 class="secret-shopper__headline headline">Помогите нам стать лучше!</h2>
           <p class="secret-shopper__subline">Запишитесь в "тайные покупатели" и проведите проверку вашей любимой парикмахерской. Вознаграждение гарантируем!</p>
           <form class="secret-shopper__form form">
             <div class="secret-shopper__inputs form__inputs">
@@ -294,13 +339,13 @@
           </form>
         </div>
       </section>
-      
+
     </main>
-    
+
     <footer class="page-footer">
-      
+
       <section class="footer">
-        <div class="container">
+        <div class="container footer__container">
           <div class="footer__block">
             <h5 class="footer__headline">Услуги</h5>
             <ul class="footer__list list">
@@ -354,9 +399,9 @@
           </div>
         </div>
       </section>
-      
+
       <section class="bottom">
-        <div class="container">
+        <div class="container bottom__container">
           <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
           <div class="bottom__social">
             <span class="bottom__text">Мы в социальных сетях: </span>
@@ -371,9 +416,9 @@
           </div>
         </div>
       </section>
-      
+
     </footer>
-    
+
   </body>
-  
+
 </html>

@@ -1,1 +1,28 @@
+////// g e n e r a l //////
+
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
 @import "scaffolding.scss";
+@import "plain.scss";
+
+////// b l o c k s //////
+
+@import "blocks/main-nav.scss";
+@import "blocks/city-select.scss";
+@import "blocks/intro.scss";
+@import "blocks/promo.scss";
+@import "blocks/current.scss";
+@import "blocks/permanent.scss";
+@import "blocks/price.scss";
+@import "blocks/nearest.scss";
+@import "blocks/saloons.scss";
+@import "blocks/feedback.scss";
+@import "blocks/rating.scss";
+@import "blocks/subscription.scss";
+@import "blocks/secret-shopper.scss";
+@import "blocks/agree.scss";
+@import "blocks/footer.scss";
+@import "blocks/bottom.scss";
+@import "blocks/social.scss";

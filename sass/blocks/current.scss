@@ -1,0 +1,52 @@
+.current {
+  width: 600px;
+  text-align: center;
+
+}
+
+.current__body {
+  position: relative;
+  height: 663px;
+  background-image: url("../img/index-promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-promo-bg@2x.jpg")
+  }
+}
+
+.current__info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 58px 135px;
+  background-color: #182138;
+}
+
+.current__text {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $semibold-font;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.current__book {
+  margin-top: 36px;
+  padding: 16px 42px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+  }
+}
