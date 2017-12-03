@@ -44,8 +44,13 @@
   letter-spacing: 0.2px;
   text-transform: none;
 
-  &::before,
+  &::before {
+    left: -30px;
+    height: 24px;
+  }
+
   &::after {
+    right: -30px;
     height: 24px;
   }
 }

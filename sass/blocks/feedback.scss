@@ -18,10 +18,10 @@
 .feedback__item {
   flex-basis: auto;
   width: 371px;
-  height: 193px;
+  min-height: 193px;
   margin-top: 46px;
   margin-bottom: 50px;
-  padding: 48px 52px;
+  padding: 43px 52px;
   text-align: left;
   color: $accent-color;
   background-color: #ffffff;

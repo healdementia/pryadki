@@ -4,7 +4,7 @@
   background-image: url("../img/index-intro-rectangle.svg"), url("../img/index-intro-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
-  background-position: -320px 0, center;
+  background-position: 0 0, center;
 
   @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
@@ -51,4 +51,18 @@
 
 .intro__book {
   margin-top: 33px;
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 1700px) {
+  .intro {
+    background-position: -200px 0, center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .intro {
+    background-position: -320px 0, center;
+  }
 }

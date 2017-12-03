@@ -317,21 +317,21 @@
         <div class="container">
           <h2 class="secret-shopper__headline headline">Помогите нам стать лучше!</h2>
           <p class="secret-shopper__subline">Запишитесь в "тайные покупатели" и проведите проверку вашей любимой парикмахерской. Вознаграждение гарантируем!</p>
-          <form class="secret-shopper__form form">
+          <form class="secret-shopper__form form" method="post">
             <div class="secret-shopper__inputs form__inputs">
               <div class="secret-shopper__group form__group">
+                <input class="secret-shopper__input form__input" type="text" id="office" name="office" value="" required>
                 <label class="secret-shopper__label form__label" for="office">Выберите офис</label>
-                <input class="secret-shopper__input form__input" type="text" id="office" name="office" required>
               </div>
               <div class="secret-shopper__group form__group">
+                <input class="secret-shopper__input form__input" type="email" id="email" name="email" value="" required>
                 <label class="secret-shopper__label form__label" for="email">Введите E-mail</label>
-                <input class="secret-shopper__input form__input" type="email" id="email" name="email" required>
               </div>
               <div class="secret-shopper__group form__group agree">
-                <input class="agree__input form__input" type="checkbox" id="agree" name="agree">
-                <label class="agree__label form__label">
+                <input class="agree__input form__input visually-hidden" type="checkbox" id="agree" name="agree">
+                <label class="agree__label form__label" for="agree">
                   <span class="agree__checkbox"></span>
-                  <p class="agree__conditions-text">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a href="#">Условиями</a></p>
+                  <p class="agree__conditions-text">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link" href="#">Условиями</a></p>
                 </label>
               </div>
             </div>
