@@ -1,2 +1,2 @@
 # pryadki
-Pryadki V Poryadke | Hairdressing Saloon in Izhevsk
+Pryadki v Poryadke | Hairdressing Saloon in Izhevsk
