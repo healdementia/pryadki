@@ -58,7 +58,7 @@
   }
 }
 
-.sallons__book {
+.saloons__book {
   padding: 19px 38px;
   font-size: 16px;
 }
@@ -77,5 +77,75 @@
   @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
           background-image: url("../img/map@2x.jpg");
+  }
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 1199px) {
+  .saloons__loci {
+    width: 450px;
+  }
+
+  .saloons__locus {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .saloons__book {
+    padding: 13px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .saloons__loci {
+    width: 280px;
+  }
+
+  .saloons__locus {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .saloons__book {
+    padding: 6px 24px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .saloons {
+    flex-wrap: wrap;
+  }
+
+  .saloons__loci,
+  .saloons__map {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .saloons__map {
+    min-height: 319px;
+  }
+
+  .saloons__locus {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .saloons__info {
+    margin-right: 20px;
+  }
+
+  .saloons__book {
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .saloons__locus {
+    justify-content: center;
   }
 }

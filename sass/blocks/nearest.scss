@@ -97,3 +97,19 @@
 .nearest__input[type="checkbox"]:checked ~ .nearest__item {
   font-family: $bold-font;
 }
+
+////// r e s p o n s i v e //////
+
+
+@media (max-width: 1199px) {
+  .nearest {
+    padding-top: 60px;
+    padding-bottom: 74px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nearest__list {
+    justify-content: space-around;
+  }
+}

@@ -22,6 +22,10 @@
 
 .subscription__headline {
   margin-bottom: 40px;
+
+  & > span {
+    font-size: inherit;
+  }
 }
 
 .subscription__mockup {
@@ -30,4 +34,55 @@
 
 .subscription__subscribe {
   margin-top: 40px;
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 1199px) {
+  .subscription {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .subscription__instagram {
+    width: 50%;
+  }
+
+  .subscription__vkontakte {
+    width: 44%;
+  }
+}
+
+@media (max-width: 699px) {
+  .subscription__headline {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .subscription__headline > span {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .subscription__container > *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .subscription__headline {
+    margin-bottom: 24px;
+  }
+
+  .subscription__instagram,
+  .subscription__vkontakte {
+    width: 100%;
+    max-width: 399px;
+    margin: auto;
+  }
+
+  .subscription__subscribe {
+    margin-top: 24px;
+  }
 }

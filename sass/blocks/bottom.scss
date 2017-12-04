@@ -30,3 +30,27 @@
   letter-spacing: 0.2px;
   color: #232639;
 }
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 699px) {
+  .bottom__container,
+  .bottom__social {
+    justify-content: space-around;
+  }
+
+  .bottom__container > * {
+    margin: 12px 10px;
+  }
+
+  .bottom__text {
+    margin-right: 22px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .bottom__text {
+    display: none;
+  }
+}
