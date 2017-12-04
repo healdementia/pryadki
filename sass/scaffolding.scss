@@ -83,8 +83,10 @@ img {
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 420px) {
   .container {
     width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }

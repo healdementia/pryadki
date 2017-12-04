@@ -50,3 +50,51 @@
     color: #ffffff;
   }
 }
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 1199px) {
+  .current {
+    flex-basis: auto;
+    width: 300px;
+    margin-right: 40px;
+    flex-grow: 1;
+  }
+
+  .current__info {
+    padding: 50px 85px;
+  }
+}
+
+@media (max-width: 991px) {
+  .current__info {
+    padding: 50px 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .current__info {
+    padding: 50px 24px;
+  }
+}
+
+@media (max-width: 699px) {
+  .current {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .current__body {
+    height: 430px;
+    background-position: center -30px;
+    background-size: cover;
+  }
+
+  .current__info {
+    padding: 34px 24px;
+  }
+
+  .current__book {
+    margin-top: 26px;
+  }
+}

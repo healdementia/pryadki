@@ -86,11 +86,11 @@
 
 @media (max-width: 499px) {
   .main-nav__container {
-    width: 320px;
+    width: 300px;
+    height: auto;
   }
 
   .main-nav__menu {
-    flex-direction: column;
     align-items: center;
     margin-top: 16px;
     padding-top: 16px;

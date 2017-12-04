@@ -66,3 +66,48 @@
     background-position: -320px 0, center;
   }
 }
+
+@media (max-width: 991px) {
+  .intro {
+    background-position: -410px 0, center;
+    background-size: cover, cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    background-position: -560px 0, 55% 0;
+  }
+
+  .intro__container {
+    max-width: 300px;
+  }
+
+  .intro__headline {
+    margin-bottom: 78px;
+    font-size: 48px;
+    line-height: 66px;
+  }
+
+  .intro__book {
+    margin-top: 16px;
+    padding: 12px 26px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 499px) {
+  .intro {
+    min-height: auto;
+    background-position: center, 55% 0;
+    background-size: 200%, cover;
+  }
+
+  .intro__headline {
+    padding-top: 24px;
+  }
+
+  .intro__book {
+    margin-bottom: 50px;
+  }
+}

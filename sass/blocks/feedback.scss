@@ -13,14 +13,23 @@
 .feedback__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 46px;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    flex-basis: auto;
+    width: 371px;
+    height: 0;
+  }
 }
 
 .feedback__item {
   flex-basis: auto;
   width: 371px;
   min-height: 193px;
-  margin-top: 46px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding: 43px 52px;
   text-align: left;
   color: $accent-color;
