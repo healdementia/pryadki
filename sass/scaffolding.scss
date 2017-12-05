@@ -12,6 +12,10 @@ body {
 
 a {
   text-decoration: none;
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 b {
@@ -80,7 +84,10 @@ img {
 }
 
 .overlay__container {
+  height: 100%;
   margin: auto;
+  padding-top: 90px;
+  overflow: scroll;
   z-index: 4;
 }
 

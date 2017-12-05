@@ -70,6 +70,55 @@
   }
 }
 
+.popup {
+  position: relative;
+  max-width: 590px;
+  margin: auto;
+  padding: 85px 80px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.popup__close {
+  position: absolute;
+  display: block;
+  top: -42px;
+  right: 0;
+  width: 25px;
+  height: 26px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.popup__strong {
+  display: block;
+  margin-bottom: 27px;
+  font-size: 28px;
+  line-height: 30px;
+  font-family: $bold-font;
+  color: $text-color;
+}
+
+.popup__text {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 30px;
+  color: $text-color;
+}
+
 ////// r e s p o n s i v e //////
 
 
@@ -116,5 +165,11 @@
   .button {
     padding: 13px 30px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 599px) {
+  .popup {
+    max-width: 90%;
   }
 }

@@ -126,13 +126,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 90px;
   padding-bottom: 30px;
 }
 
 .price__close {
   position: absolute;
   display: block;
-  top: -42px;
+  top: 38px;
   right: 0;
   width: 25px;
   height: 26px;

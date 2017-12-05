@@ -19,9 +19,22 @@
   height: 27px;
   margin-top: 5px;
   margin-right: 29px;
+  background-color: rgba(255, 255, 255, 0);
   border: 2px solid #ffffff;
   border-radius: 2px;
   flex-shrink: 0;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &--dark {
+    border-color: #71737f;
+  }
+
+  &--dark:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .agree__input:checked ~ .agree__label > .agree__checkbox {
@@ -29,17 +42,37 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  &--dark {
+    background-image: url("../img/icon-check-dark.svg");
+  }
+}
+
+.agree__input:focus ~ .agree__label > .agree__checkbox {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &--dark {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .agree__conditions-text {
   margin: 0;
   padding: 0;
   font-family: $semibold-font;
+
+  &--dark {
+    color: #71737f;
+  }
 }
 
 .agree__link {
   color: #ffffff;
   text-decoration: underline;
+
+  &--dark {
+    color: #71737f;
+  }
 
   &:hover {
     text-decoration: none;
