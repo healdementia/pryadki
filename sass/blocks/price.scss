@@ -153,6 +153,10 @@
   }
 }
 
+.price__table {
+  width: 100%;
+}
+
 .price__details {
   flex-basis: auto;
   width: 767px;
@@ -174,7 +178,8 @@
   border-top: 1px solid $headline-color;
   border-right: 1px solid $headline-color;
 
-  &:first-child {
+  &:first-child:not(:only-child) {
+    width: 80%;
     max-width: 346px;
     padding-right: 20px;
     text-align: left;
@@ -196,6 +201,22 @@
       border-right: 0;
     }
   }
+
+  &--only {
+    padding: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    border-top: 1px solid $headline-color;
+  }
+
+  &--options {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+
+.price__row:first-child > .price__cell--only {
+  border-top: 0;
 }
 
 .price__cell > span {
@@ -239,6 +260,30 @@
 .price__cell--learn-more span:hover::after {
   background-color: $headline-color;
   cursor: pointer;
+}
+
+.price__option {
+  width: 146px;
+  height: 56px;
+  padding: 16px 42px;
+  margin: 0 5px;
+
+  &--1 {
+    background-color: $theme-color;
+  }
+
+  &--2 {
+    background-color: #005ca1;
+  }
+}
+
+#women-1-price,
+#women-2-price,
+#women-3-price,
+#women-4-price,
+#dye-1-1-price,
+#dye-1-2-price {
+  display: none;
 }
 
 ////// r e s p o n s i v e //////

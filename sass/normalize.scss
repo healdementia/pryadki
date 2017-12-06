@@ -262,9 +262,12 @@ select { /* 1 */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type="submit"]::-moz-focus-inner,
+*::-moz-focus-outer,
+*::-moz-focus-inner {
   border-style: none;
   padding: 0;
+  border: 0;
 }
 
 /**
