@@ -41,9 +41,16 @@
           </ul>
           <div class="main-nav__contact">
             <b class="main-nav__tel">8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22</b>
-            <div class="nearest__city city-select">
-              <span class="city-select__dropdown">Ижевск</span>
-            </div>
+            <!-- div class="main-nav__city city-select">
+              <form class="city-select__form">
+                <select class="city-select__dropdown">
+                  <option value="Ижевск" selected>Ижевск</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Можга">Можга</option>
+                  <option value="Лос-Анджелес">Лос-Анджелес</option>
+                </select>
+              </form>
+            </div -->
           </div>
         </div>
       </nav>
@@ -327,9 +334,16 @@
           <header class="nearest__header">
             <h2 class="nearest__headline headline">Найдите ближайший от вас салон</h2>
           </header>
-          <div class="nearest__city city-select">
-            <span class="city-select__dropdown">Ижевск</span>
-          </div>
+          <!-- div class="nearest__city city-select">
+            <form class="city-select__form">
+              <select class="city-select__dropdown">
+                <option value="Ижевск" selected>Ижевск</option>
+                <option value="Москва">Москва</option>
+                <option value="Можга">Можга</option>
+                <option value="Лос-Анджелес">Лос-Анджелес</option>
+              </select>
+            </form>
+          </div -->
           <h5 class="nearest__subline">Выберите направление:</h5>
           <form class="nearest__list">
             <div class="nearest__group">
@@ -456,33 +470,38 @@
             </li>
           </ul>
           <div class="feedback__footer">
-            <button class="feedback__leave-feedback button" type="button">Оставить отзыв</button>
+            <button class="feedback__leave-feedback button" id="leave-feedback" type="button">Оставить отзыв</button>
             <button class="feedback__more button" type="button">Ещё отзывы</button>
           </div>
         </div>
-        <div class="overlay" id="feedback-overlay">
+        <div class="overlay" id="leave-feedback-overlay">
           <div class="overlay__container">
             <div class="feedback__popup popup">
-              <button class="feedback__close popup__close unbutton" id="feedback-close"></button>
+              <button class="feedback__close popup__close unbutton" id="leave-feedback-close"></button>
               <h3 class="popup__headline headline">Оставьте свой отзыв</h3>
               <form class="feedback__form form">
                 <div class="feedback__block form__block">
                   <div class="feedback__group form__group">
-                    <input class="feedback__input form__input" id="name" type="text" placeholder="&nbsp;" required>
+                    <input class="feedback__input form__input" id="name" type="text" placeholder="&nbsp;" minlength="2" title="Минимум 2 символа!" required>
                     <label class="feedback__label form__label" for="name">Ваше имя</label>
                   </div>
                   <div class="feedback__group form__group">
-                    <input class="feedback__input form__input" id="email" type="email" placeholder="&nbsp;" required>
-                    <label class="feedback__label form__label" for="email">E-mail</label>
+                    <input class="feedback__input form__input" id="feedback-email" type="email" placeholder="&nbsp;" required>
+                    <label class="feedback__label form__label" for="feedback-email">E-mail</label>
                   </div>
-                  <div class="feedback__group feedback__group--rating form__group">
+                  <div class="feedback__group feedback__group--rating form__group esteem">
                     <span>Поставьте оценку: </span>
-                    <div class="rating__stars rating__stars--feedback">
-                      <span class="rating__star"></span>
-                      <span class="rating__star"></span>
-                      <span class="rating__star"></span>
-                      <span class="rating__star"></span>
-                      <span class="rating__star"></span>
+                    <div class="esteem__container">
+                      <input class="esteem__input visually-hidden" type="radio" id="great" name="rating" value="great">
+                      <label class="esteem__label" for="great" title="Супер!"></label>
+                      <input class="esteem__input visually-hidden" type="radio" id="okay" name="rating" value="okay">
+                      <label class="esteem__label" for="okay" title="Хорошо"></label>
+                      <input class="esteem__input visually-hidden" type="radio" id="so-so" name="rating" value="so-so">
+                      <label class="esteem__label" for="so-so" title="На троечку"></label>
+                      <input class="esteem__input visually-hidden" type="radio" id="no-good" name="rating" value="no-good">
+                      <label class="esteem__label" for="no-good" title="Так себе"></label>
+                      <input class="esteem__input visually-hidden" type="radio" id="awful" name="rating" value="awful">
+                      <label class="esteem__label" for="awful" title="Ужасно!"></label>
                     </div>
                   </div>
                 </div>
@@ -491,8 +510,8 @@
                   <label class="feedback__label" for="message">Напишите отзыв</label>
                 </div>
                 <div class="feedback__agree agree">
-                  <input class="agree__input form__input visually-hidden" type="checkbox" id="agree" name="agree">
-                  <label class="agree__label form__label" for="agree">
+                  <input class="agree__input form__input visually-hidden" type="checkbox" id="feedback-agree" name="agree" required>
+                  <label class="agree__label form__label" for="feedback-agree">
                     <span class="agree__checkbox agree__checkbox--dark"></span>
                     <p class="agree__conditions-text agree__conditions-text--dark">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link agree__link--dark" href="#">Условиями</a></p>
                   </label>
@@ -500,6 +519,13 @@
                 <button class="feedback__submit button" type="button">Отправить</button>
               </form>
             </div>
+          </div>
+        </div>
+        <div class="overlay" id="feedback-sent-overlay">
+          <div class="feedback-sent__popup popup">
+            <button class="popup__close unbutton" id="feedback-sent-close" type="button"></button>
+            <b class="popup__strong">Ваш отзыв получен. Спасибо!</b>
+            <p class="popup__text">Вы помогаете нам стать лучше.</p>
           </div>
         </div>
       </section>
@@ -542,12 +568,12 @@
                 </label>
               </div>
             </div>
-            <button class="secret-shopper__submit button" type="submit">Отправить</button>
+            <button class="secret-shopper__submit button" id="secret-shopper-popup" type="submit">Отправить</button>
           </form>
         </div>
-        <div class="overlay" id="secret-shopper-overlay">
+        <div class="overlay" id="secret-shopper-popup-overlay">
           <div class="secret-shopper__popup popup">
-            <button class="popup__close unbutton" id="secret-shopper-close" type="button"></button>
+            <button class="popup__close unbutton" id="secret-shopper-popup-close" type="button"></button>
             <b class="popup__strong">Ваша заявка получена. Спасибо!</b>
             <p class="popup__text">Менеджер свяжется с вами в ближайшее время.</p>
           </div>
@@ -634,12 +660,35 @@
     </footer>
 
     <script>
-      document.getElementById("price-haircut").onclick = function() {
-        document.getElementById("price-overlay").style = "display: flex;";
+      function open(a, b) {
+        document.getElementById(a).onclick = function() {
+          document.getElementById(b).style = "display: flex;";
+        }
       }
-      document.getElementById("price-close").onclick = function() {
-        document.getElementById("price-overlay").style = "display: none;";
+      function close(a, b) {
+        document.getElementById(a).onclick = function() {
+          document.getElementById(b).style = "display: none;";
+        }
       }
+      function openThis(a) {
+        b = a + "-overlay";
+        document.getElementById(a).onclick = function() {
+          document.getElementById(b).style = "display: flex;";
+        }
+      }
+      function closeThis(a) {
+        b = a + "-overlay";
+        c = a + "-close";
+        document.getElementById(c).onclick = function() {
+          document.getElementById(b).style = "display: none;";
+        }
+      }
+      openThis("secret-shopper-popup");
+      closeThis("secret-shopper-popup");
+      openThis("leave-feedback");
+      closeThis("leave-feedback");
+      open("price-haircut", "price-overlay");
+      close("price-close", "price-overlay");
     </script>
 
   </body>

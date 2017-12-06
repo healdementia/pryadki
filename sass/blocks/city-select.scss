@@ -11,10 +11,13 @@
 .city-select__dropdown {
   font-size: 16px;
   line-height: 24px;
+  background-color: transparent;
   border-top: 0;
   border-right: 0;
   border-left: 0;
   border-bottom: 3px solid;
   border-image: url("../img/city-select-border.svg");
   border-image-slice: 3;
+  outline: none;
+  appearance: none;
 }

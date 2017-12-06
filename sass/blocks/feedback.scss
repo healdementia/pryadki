@@ -203,6 +203,12 @@
 
 ////// r e s p o n s i v e //////
 
+@media (max-width: 1499px) {
+  .feedback__popup {
+    padding: 50px;
+  }
+}
+
 @media (max-width: 1199px) {
   .feedback {
     padding-top: 60px;

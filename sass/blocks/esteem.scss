@@ -1,0 +1,37 @@
+.esteem__container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.esteem__label {
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  margin-left: 15px;
+  background-image: url("../img/icon-rating-star-empty.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &:last-of-type {
+    margin-left: 0;
+  }
+}
+
+.esteem__input:checked ~ .esteem__label {
+  background-image: url("../img/icon-rating-star.svg");
+  cursor: pointer;
+}
+
+.esteem__input:hover ~ .esteem__label {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 991px) {
+  .esteem__label {
+    margin-left: 7px;
+  }
+}
