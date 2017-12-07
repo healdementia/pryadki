@@ -1,5 +1,9 @@
 .main-nav {
   background-color: #ffffff;
+
+  &--contact {
+    border-bottom: 1px solid #c4c4c4;
+  }
 }
 
 .main-nav__container {
@@ -75,6 +79,10 @@
     margin-top: 5px;
     padding-top: 5px;
     border-top: 2px solid $theme-color;
+
+    &--contact {
+      border: 0;
+    }
   }
 }
 

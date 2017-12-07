@@ -2029,14 +2029,14 @@
               <form class="feedback__form form">
                 <div class="feedback__block form__block">
                   <div class="feedback__group form__group">
-                    <input class="feedback__input form__input" id="name" type="text" placeholder="&nbsp;" minlength="2" title="Минимум 2 символа!" required>
+                    <input class="feedback__input form__input" id="name" type="text" placeholder="&nbsp;" value="" minlength="2" title="Минимум 2 символа!" required>
                     <label class="feedback__label form__label" for="name">Ваше имя</label>
                   </div>
                   <div class="feedback__group form__group">
-                    <input class="feedback__input form__input" id="feedback-email" type="email" placeholder="&nbsp;" required>
+                    <input class="feedback__input form__input" id="feedback-email" type="email" placeholder="&nbsp;" value="" required>
                     <label class="feedback__label form__label" for="feedback-email">E-mail</label>
                   </div>
-                  <div class="feedback__group feedback__group--rating form__group esteem">
+                  <div class="feedback__group form__group form__group--rating esteem">
                     <span>Поставьте оценку: </span>
                     <div class="esteem__container">
                       <input class="esteem__input visually-hidden" type="radio" id="great" name="rating" value="great">
@@ -2053,12 +2053,12 @@
                   </div>
                 </div>
                 <div class="feedback__block form__block">
-                  <textarea class="feedback__message form__message" id="message" placeholder="&nbsp;" minlength="10" maxlength="300" title="Минимум 10, максимум 300 символов" required></textarea>
-                  <label class="feedback__label" for="message">Напишите отзыв</label>
+                  <textarea class="feedback__message form__message" id="message" placeholder="&nbsp;" value="" minlength="10" maxlength="300" title="Минимум 10, максимум 300 символов" required></textarea>
+                  <label class="feedback__label form__label" for="message">Напишите отзыв</label>
                 </div>
                 <div class="feedback__agree agree">
-                  <input class="agree__input form__input visually-hidden" type="checkbox" id="feedback-agree" name="agree" required>
-                  <label class="agree__label form__label" for="feedback-agree">
+                  <input class="agree__input visually-hidden" type="checkbox" id="feedback-agree" name="agree" required>
+                  <label class="agree__label" for="feedback-agree">
                     <span class="agree__checkbox agree__checkbox--dark"></span>
                     <p class="agree__conditions-text agree__conditions-text--dark">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link agree__link--dark" href="#">Условиями</a></p>
                   </label>
@@ -2097,19 +2097,19 @@
         <div class="container">
           <h2 class="secret-shopper__headline headline">Помогите нам стать лучше!</h2>
           <p class="secret-shopper__subline">Запишитесь в "тайные покупатели" и проведите проверку вашей любимой парикмахерской. Вознаграждение гарантируем!</p>
-          <form class="secret-shopper__form form" method="post">
-            <div class="secret-shopper__inputs form__inputs">
-              <div class="secret-shopper__group form__group">
-                <input class="secret-shopper__input form__input" type="text" id="office" name="office" value="" placeholder="&nbsp;" required>
-                <label class="secret-shopper__label form__label" for="office">Выберите офис</label>
+          <form class="secret-shopper__form" method="post">
+            <div class="secret-shopper__inputs">
+              <div class="secret-shopper__group">
+                <input class="secret-shopper__input" type="text" id="office" name="office" value="" placeholder="&nbsp;" required>
+                <label class="secret-shopper__label" for="office">Выберите офис</label>
               </div>
-              <div class="secret-shopper__group form__group">
-                <input class="secret-shopper__input form__input" type="email" id="email" name="email" value="" placeholder="&nbsp;" required>
-                <label class="secret-shopper__label form__label" for="email">Введите E-mail</label>
+              <div class="secret-shopper__group">
+                <input class="secret-shopper__input" type="email" id="email" name="email" value="" placeholder="&nbsp;" required>
+                <label class="secret-shopper__label" for="email">Введите E-mail</label>
               </div>
-              <div class="secret-shopper__group form__group agree">
-                <input class="agree__input form__input visually-hidden" type="checkbox" id="agree" name="agree">
-                <label class="agree__label form__label" for="agree">
+              <div class="secret-shopper__group agree">
+                <input class="agree__input visually-hidden" type="checkbox" id="agree" name="agree">
+                <label class="agree__label" for="agree">
                   <span class="agree__checkbox"></span>
                   <p class="agree__conditions-text">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link" href="#">Условиями</a></p>
                 </label>
@@ -2160,7 +2160,7 @@
                 <a class="footer__link" href="#">Вакансии</a>
               </li>
               <li class="footer__item list__item">
-                <a class="footer__link" href="#">Контакты компании</a>
+                <a class="footer__link" href="contact.html">Контакты компании</a>
               </li>
               <li class="footer__item list__item">
                 <a class="footer__link" href="#">Солярий</a>

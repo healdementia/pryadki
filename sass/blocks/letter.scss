@@ -1,0 +1,80 @@
+.letter {
+  padding-top: 53px;
+  padding-bottom: 54px;
+  color: #ffffff;
+  text-align: center;
+  background-color: $theme-color;
+}
+
+.letter__headline {
+  margin: 0 0 42px;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+
+.letter__form {
+  width: 768px;
+  margin: 0 auto;
+}
+
+.letter__input,
+.letter__message {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.letter__input {
+  margin-bottom: 22px;
+}
+
+.letter__message {
+  height: 224px;
+}
+
+.letter__label {
+  color: #ffffff;
+}
+
+.letter__submit {
+  width: 368px;
+  background-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($accent-color, 5%);
+  }
+
+  &:active {
+    background-color: lighten($accent-color, 10%);
+  }
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 991px) {
+  .letter__form {
+    width: 625px;
+  }
+
+  .letter__submit {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .letter__headline {
+    font-size: 22px;
+  }
+
+  .letter__submit {
+    width: 100%;
+    max-width: 399px;
+  }
+}
+
+@media (max-width: 699px) {
+  .letter__form {
+    width: 100%;
+  }
+}

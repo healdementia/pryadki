@@ -142,6 +142,140 @@
   color: $text-color;
 }
 
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__block {
+  width: 368px;
+}
+
+.form__block,
+.form__group {
+  position: relative;
+}
+
+.form__input {
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+.form__message {
+  height: 100%;
+  min-height: 160px;
+  max-height: 100%;
+  text-align: left;
+}
+
+.form__input,
+.form__message {
+  width: 100%;
+  max-width: 100%;
+  padding: 19px 19px 17px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-family: $semibold-font;
+  color: $accent-color;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+  border-radius: 5px;
+  z-index: 2;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.form__input:required:valid:not(:focus):not(:placeholder-shown),
+.form__message:required:valid:not(:focus):not(:placeholder-shown) {
+  padding-right: 15%;
+  border-color: #7dad65;
+  background-image: url("../img/happy-face-dark.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 19px;
+  background-size: 22px;
+  text-overflow: ellipsis;
+}
+
+.form__input:required:invalid:not(:focus):not(:placeholder-shown),
+.form__message:required:invalid:not(:focus):not(:placeholder-shown) {
+  padding-right: 15%;
+  padding-left: 15%;
+  border-color: #da3434;
+  background-image: url("../img/sad-face-dark.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 19px;
+  background-size: 22px;
+  text-overflow: ellipsis;
+}
+
+.form__input:required:valid:not(:focus):not(:placeholder-shown),
+.form__input:required:invalid:not(:focus):not(:placeholder-shown) {
+  padding-left: 15%;
+}
+
+.form__label {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  right: 0;
+  letter-spacing: 0.5px;
+  font-family: $semibold-font;
+  color: $accent-color;
+  user-select: none;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+}
+
+.form__input:focus ~ label,
+.form__message:focus ~ label {
+  top: 0;
+  font-size: 10px;
+}
+
+.form__input:not([value=""]):not(:focus) ~ label,
+.form__input:not(:focus):not(:placeholder-shown) ~ label,
+.form__message:not([value=""]):not(:focus) ~ label,
+.form__message:not(:focus):not(:placeholder-shown) ~ label {
+  display: none;
+}
+
+.form__group--rating {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__group--rating > span {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  font-family: $semibold-font;
+}
+
+.form__submit {
+  width: 100%;
+  max-width: 368px;
+  margin-top: 25px;
+  background-color: $accent-color;
+
+  &:hover {
+    background-color: $theme-color;
+  }
+
+  &:focus,
+  &:active {
+    background-color: darken($theme-color, 5%);
+  }
+}
+
 ////// r e s p o n s i v e //////
 
 
@@ -167,6 +301,14 @@
       height: 32px;
     }
   }
+
+  .form__block {
+    width: 300px;
+  }
+
+  .form__submit {
+    width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -188,6 +330,25 @@
   .button:not(.button--to-top) {
     padding: 13px 30px;
     font-size: 16px;
+  }
+
+  .form {
+    justify-content: space-around;
+  }
+
+  .form__block {
+    width: 100%;
+    max-width: 399px;
+  }
+
+  .form__group--rating {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 699px) {
+  .form {
+    width: 100%;
   }
 }
 

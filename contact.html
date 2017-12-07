@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Прядки в порядке - сеть парикмахерских в Ижевске</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+
+      <nav class="main-nav main-nav--contact">
+        <div class="container main-nav__container">
+          <div class="main-nav__logo">
+            <a href="index.html">
+              <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50">
+            </a>
+          </div>
+          <span class="main-nav__toggle"></span>
+          <ul class="main-nav__menu main-nav__menu--contact list">
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Записаться онлайн</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="services.html">Услуги и цены</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Новости</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item list__item">
+              <a class="main-nav__link" href="#">Вакансии</a>
+            </li>
+          </ul>
+          <div class="main-nav__contact">
+            <b class="main-nav__tel">8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22</b>
+            <div class="main-nav__city city-select">
+              <form class="city-select__form">
+                <select class="city-select__dropdown">
+                  <option value="Ижевск" selected>Ижевск</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Можга">Можга</option>
+                  <option value="Лос-Анджелес">Лос-Анджелес</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+
+      <section class="contact">
+        <div class="container">
+          <h1 class="contact__headline headline">Контакты</h1>
+          <p class="contact__subline">Есть вопросы? Позвоните нам.<br>Телефон горячей линии: 8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22<br>(звонок бесплатный для всех регионов&nbsp;РФ)</p>
+          <ul class="contact__list list">
+            <li class="contact__item list__item">
+              <b class="contact__department">Для клиентов</b>
+              <p class="contact__info">Телефон: +7&nbsp;(444)&nbsp;444&nbsp;44&nbsp;44</p>
+              <p class="contact__info">E-mail: <a class="contact__link" href="mailto:primer@yandex.ru">primer@yandex.ru</a></p>
+            </li>
+            <li class="contact__item list__item">
+              <b class="contact__department">Отдел кадров</b>
+              <p class="contact__info">Телефон: +7&nbsp;(444)&nbsp;444&nbsp;44&nbsp;44</p>
+              <p class="contact__info">E-mail: <a class="contact__link" href="mailto:primer@yandex.ru">primer@yandex.ru</a></p>
+            </li>
+            <li class="contact__item list__item">
+              <b class="contact__department">Для бизнес-предложений</b>
+              <p class="contact__info">Телефон: +7&nbsp;(444)&nbsp;444&nbsp;44&nbsp;44</p>
+              <p class="contact__info">E-mail: <a class="contact__link" href="mailto:primer@yandex.ru">primer@yandex.ru</a></p>
+            </li>
+            <li class="contact__item list__item">
+              <b class="contact__department">Для СМИ и рекламы</b>
+              <p class="contact__info">Телефон: +7&nbsp;(444)&nbsp;444&nbsp;44&nbsp;44</p>
+              <p class="contact__info">E-mail: <a class="contact__link" href="mailto:primer@yandex.ru">primer@yandex.ru</a></p>
+            </li>
+          </ul>
+          <div class="contact__main-office main-office">
+            <img class="main-office__bearded-man" src="img/bearded-man.svg" width="301" height="470">
+            <h5 class="main-office__headline">Главный офис</h5>
+            <p class="main-office__info">Телефон: +7&nbsp;(3412)&nbsp;33&nbsp;33&nbsp;33</p>
+            <p class="main-office__info">Почтовый адрес:<br>426000, г.&nbsp;Ижевск, ул.&nbsp;Пушкинская, д.&nbsp;123, оф.&nbsp;456</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="letter">
+        <div class="container">
+          <h5 class="letter__headline">Вы можете отправить своё сообщение:</h5>
+          <form class="letter__form form">
+            <div class="letter__block form__block">
+              <div class="letter__group form__group">
+                <input class="letter__input form__input" id="name" type="text" placeholder="&nbsp;" value="" minlength="2" title="Минимум 2 символа!" required>
+                <label class="letter__label form__label" for="name">Ваше имя</label>
+              </div>
+              <div class="letter__group form__group">
+                <input class="letter__input form__input" id="email" type="email" placeholder="&nbsp;" value="" required>
+                <label class="letter__label form__label" for="email">E-mail</label>
+              </div>
+              <div class="letter__group form__group">
+                <input class="letter__input form__input" id="tel" type="tel" placeholder="&nbsp;" value="" required>
+                <label class="letter__label form__label" for="tel">Телефон</label>
+              </div>
+            </div>
+            <div class="letter__block form__block">
+              <textarea class="letter__message form__message" id="message" placeholder="&nbsp;" value="" minlength="10" maxlength="300" title="Минимум 10, максимум 300 символов" required></textarea>
+              <label class="letter__label form__label" for="message">Напишите сообщение</label>
+            </div>
+            <div class="letter__agree agree">
+              <input class="agree__input visually-hidden" type="checkbox" id="agree" name="agree" required>
+              <label class="agree__label" for="agree">
+                <span class="agree__checkbox"></span>
+                <p class="agree__conditions-text">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link" href="#">Условиями</a></p>
+              </label>
+            </div>
+            <button class="letter__submit button" type="button">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <section class="footer">
+        <div class="container footer__container">
+          <div class="footer__block footer__block--service">
+            <h5 class="footer__headline">Услуги</h5>
+            <ul class="footer__list list">
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Женский зал</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Мужской зал</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Детский зал</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Маникюр</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h5 class="footer__headline">О компании</h5>
+            <ul class="footer__list list">
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Франшиза</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Контакты компании</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Солярий</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h5 class="footer__headline">Клиенту</h5>
+            <ul class="footer__list list">
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Скидки и акции</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Запись онлайн</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Новости</a>
+              </li>
+              <li class="footer__item list__item">
+                <a class="footer__link" href="#">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom">
+        <div class="container bottom__container">
+          <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
+          <div class="bottom__social">
+            <span class="bottom__text">Мы в социальных сетях: </span>
+            <ul class="bottom__list social list">
+              <li class="social__item list__item">
+                <a class="social__link social__link--instagram" href="#" title="Наш профиль в Instagram"></a>
+              </li>
+              <li class="social__item list__item">
+                <a class="social__link social__link--vkontakte" href="#" title="Наш профиль ВКонтакте"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </footer>
+
+  </body>
+
+</html>

@@ -9,11 +9,11 @@
 
 .social__link {
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 38px 38px;
 
   &--instagram {
     background-image: url("../img/icon-instagram.svg");
@@ -21,5 +21,14 @@
 
   &--vkontakte {
     background-image: url("../img/icon-vkontakte.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }

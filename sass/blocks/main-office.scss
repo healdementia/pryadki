@@ -1,0 +1,59 @@
+.main-office {
+  position: relative;
+  padding: 57px 20px 49px;
+  color: #ffffff;
+  background-color: $accent-color;
+}
+
+.main-office__headline {
+  display: inline-block;
+  margin: 0 0 25px;
+  padding: 0 31px 23px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $bold-font;
+  border-bottom: 3px solid #ffffff;
+}
+
+.main-office__info {
+  margin: 0 auto;
+  max-width: 450px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.main-office__bearded-man {
+  position: absolute;
+  top: -145px;
+  left: -210px;
+}
+
+@media (max-width: 768px) {
+  .main-office {
+    padding-top: 47px;
+  }
+
+  .main-office__bearded-man {
+    width: 145px;
+    top: -65px;
+    left: -70px;
+  }
+}
+
+@media (max-width: 599px) {
+  .main-office__bearded-man {
+    width: 120px;
+    top: -55px;
+    left: -50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-office__bearded-man {
+    width: 120px;
+    top: -55px;
+    left: -66px;
+  }
+}
