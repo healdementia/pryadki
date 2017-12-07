@@ -219,6 +219,27 @@
   border-top: 0;
 }
 
+.price__row--no-header > .price__cell {
+  border-top: 0;
+}
+
+.price__row--equal > .price__cell,
+.price__row--equal > .price__cell:first-child {
+  width: auto;
+  max-width: 83px;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.price__row--equal > .price__cell--header,
+.price__row--equal > .price__cell--header:first-child {
+  padding: 0 40px 19px;
+  font-size: 15px;
+  vertical-align: top;
+}
+
 .price__cell > span {
   font-size: 18px;
   line-height: 24px;
@@ -282,7 +303,17 @@
 #women-3-price,
 #women-4-price,
 #dye-1-1-price,
-#dye-1-2-price {
+#dye-1-2-price,
+#men-1-price,
+#men-2-price,
+#baby-1-price,
+#nails-1-price,
+#nails-2-price,
+#nails-3-price,
+#nails-4-price,
+#other-1-price,
+#other-2-price,
+#other-3-price {
   display: none;
 }
 

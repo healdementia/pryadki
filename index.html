@@ -206,9 +206,9 @@
             </div>
           </div>
         </div>
-        <div class="overlay" id="price-overlay-women">
+        <div class="overlay" id="price-women-overlay">
           <div class="container overlay__container price__popup price__popup--women">
-            <button class="price__close unbutton" id="price-close" type="button"></button>
+            <button class="price__close unbutton" id="price-women-close" type="button"></button>
             <div class="price__block">
               <h4 class="price__service-name headline">Женский зал</h4>
               <ul class="price__list list">
@@ -692,14 +692,14 @@
             </div>
           </div>
         </div>
-        <div class="overlay" id="price-overlay">
+        <div class="overlay" id="price-dye-overlay">
           <div class="container overlay__container price__popup price__popup--women">
-            <button class="price__close unbutton" id="price-close" type="button"></button>
+            <button class="price__close unbutton" id="price-dye-close" type="button"></button>
             <div class="price__block">
               <h4 class="price__service-name headline">Окрашивание волос</h4>
               <ul class="price__list list">
                 <li class="price__item list__item">
-                  <button class="price__link unbutton" type="button">Окрашивание</button>
+                  <button class="price__link price__link--open unbutton" type="button">Окрашивание</button>
                 </li>
                 <li class="price__item list__item">
                   <button class="price__link unbutton" type="button">Дополнительные услуги</button>
@@ -1112,14 +1112,14 @@
             </div>
           </div>
         </div>
-        <div class="overlay" id="price-overlay-men">
-          <div class="container overlay__container price__popup price__popup--women">
-            <button class="price__close unbutton" id="price-close" type="button"></button>
+        <div class="overlay" id="price-men-overlay">
+          <div class="container overlay__container price__popup">
+            <button class="price__close unbutton" id="price-men-close" type="button"></button>
             <div class="price__block">
               <h4 class="price__service-name headline">Мужской зал</h4>
               <ul class="price__list list">
                 <li class="price__item list__item">
-                  <button class="price__link unbutton" type="button">Стрижки</button>
+                  <button class="price__link price__link--open unbutton" type="button">Стрижки</button>
                 </li>
                 <li class="price__item list__item">
                   <button class="price__link unbutton" type="button">Усы и борода</button>
@@ -1129,24 +1129,60 @@
                 </li>
               </ul>
             </div>
-            <div class="price__details" id="women-4-price">
+            <div class="price__details" id="men-1-price">
               <table class="price__table" border="0" cellpadding="0" cellspacing="0">
                 <tr class="price__row">
                   <th class="price__cell price__cell--header price__cell--only" colspan="2">
-                    Брови
+                    Мытьё и сушка волос &mdash; бесплатно к каждой стрижке!
                   </th>
                 </tr>
                 <tr class="price__row">
-                  <td class="price__cell price__cell--attention">
-                    <span>Оформление бровей</span>
+                  <td class="price__cell">
+                    <span>Бокс/полубокс/спортивная</span>
                   </td>
                   <td class="price__cell">
-                    150 руб.
+                    180 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell price__cell--learn-more">
+                    <span>Модельная/теннис</span>
+                  </td>
+                  <td class="price__cell">
+                    210 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell price__cell--attention">
+                    <span>Креативная</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
                   </td>
                 </tr>
                 <tr class="price__row">
                   <td class="price__cell">
-                    <span>Окрашивание бровей краской</span>
+                    <span>Наголо</span>
+                  </td>
+                  <td class="price__cell">
+                    70 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="men-2-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Оформление усов</span>
+                  </td>
+                  <td class="price__cell">
+                    50 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Оформление бороды (машинкой)</span>
                   </td>
                   <td class="price__cell">
                     150 руб.
@@ -1154,18 +1190,684 @@
                 </tr>
                 <tr class="price__row">
                   <td class="price__cell price__cell--learn-more">
-                    <span>Долговременное окрашивание бровей</span>
+                    <span>Оформление бороды (опасной бритвой)</span>
+                  </td>
+                  <td class="price__cell">
+                    350 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="men-3-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Оформление усов</span>
+                  </td>
+                  <td class="price__cell">
+                    50 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Оформление бороды (машинкой)</span>
+                  </td>
+                  <td class="price__cell">
+                    150 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell price__cell--learn-more">
+                    <span>Оформление бороды (опасной бритвой)</span>
+                  </td>
+                  <td class="price__cell">
+                    350 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="price-baby-overlay">
+          <div class="container overlay__container price__popup">
+            <button class="price__close unbutton" id="price-baby-close" type="button"></button>
+            <div class="price__block">
+              <h4 class="price__service-name headline">Детский зал</h4>
+              <ul class="price__list list">
+                <li class="price__item list__item">
+                  <button class="price__link price__link--open unbutton" type="button">Стрижки</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Дополнительные услуги</button>
+                </li>
+              </ul>
+            </div>
+            <div class="price__details" id="baby-1-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row">
+                  <th class="price__cell price__cell--header price__cell--only" colspan="2">
+                    Мытьё и сушка волос &mdash; бесплатно к каждой стрижке!
+                  </th>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Спортивная</span>
+                  </td>
+                  <td class="price__cell">
+                    150 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Модельная</span>
+                  </td>
+                  <td class="price__cell">
+                    200 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell price__cell--attention">
+                    <span>Креативная</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell price__cell--learn-more">
+                    <span>Креативная со сложным рисунком</span>
+                  </td>
+                  <td class="price__cell">
+                    500 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="baby-2-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Оформление/подравнивание чёлки</span>
+                  </td>
+                  <td class="price__cell">
+                    50 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Подравнивание кончиков волос</span>
+                  </td>
+                  <td class="price__cell">
+                    50 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell price__cell--learn-more">
+                    <span>Плетение</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Причёска</span>
+                  </td>
+                  <td class="price__cell">
+                    600 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="price-nails-overlay">
+          <div class="container overlay__container price__popup">
+            <button class="price__close unbutton" id="price-nails-close" type="button"></button>
+            <div class="price__block">
+              <h4 class="price__service-name headline">Маникюрный кабинет</h4>
+              <ul class="price__list list">
+                <li class="price__item list__item">
+                  <button class="price__link price__link--open unbutton" type="button">Маникюр</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Педикюр</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Укрепление</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Парафинотерапия</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Дополнительные услуги</button>
+                </li>
+              </ul>
+            </div>
+            <div class="price__details" id="nails-1-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Маникюр женский</span>
+                  </td>
+                  <td class="price__cell">
+                    199 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Маникюр мужской</span>
+                  </td>
+                  <td class="price__cell">
+                    299 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Маникюр детский</span>
+                  </td>
+                  <td class="price__cell">
+                    199 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Маникюр + гель-лак</span>
+                  </td>
+                  <td class="price__cell">
+                    800 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Маникюр + лак</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="nails-2-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Педикюр женский</span>
+                  </td>
+                  <td class="price__cell">
+                    800 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Педикюр мужской</span>
+                  </td>
+                  <td class="price__cell">
+                    1000 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Педикюр на пальчики</span>
+                  </td>
+                  <td class="price__cell">
+                    350 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Педикюр на пальчики + гель-лак</span>
+                  </td>
+                  <td class="price__cell">
+                    650 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Педикюр + гель-лак</span>
+                  </td>
+                  <td class="price__cell">
+                    1450 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Педикюр на пальчики + лак</span>
+                  </td>
+                  <td class="price__cell">
+                    450 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Педикюр + лак</span>
+                  </td>
+                  <td class="price__cell">
+                    900 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="nails-3-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Укрепление ногтей акриловой пудрой</span>
+                  </td>
+                  <td class="price__cell">
+                    200 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Укрепление ногтей гелем</span>
+                  </td>
+                  <td class="price__cell">
+                    700 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Наращивание ногтей (типсы, формы)</span>
+                  </td>
+                  <td class="price__cell">
+                    800 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="nails-4-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Парафинотерапия для рук</span>
+                  </td>
+                  <td class="price__cell">
+                    200 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Парафинотерапия для ног</span>
+                  </td>
+                  <td class="price__cell">
+                    700 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="nails-5-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Дизайн к покрытию гель-лак (1 ноготь)</span>
+                  </td>
+                  <td class="price__cell">
+                    15 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Дизайн к покрытию лак (1 ноготь)</span>
+                  </td>
+                  <td class="price__cell">
+                    15 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Дизайн к наращиванию/укреплению. Гель-лак/френч (1 ноготь)</span>
+                  </td>
+                  <td class="price__cell">
+                    35 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Роспись/стразы (1 ноготь)</span>
+                  </td>
+                  <td class="price__cell">
+                    50 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Снятие гель-лака + маникюр</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Снятие искусственных ногтей + маникюр</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Коррекция ногтей (2 недели)</span>
+                  </td>
+                  <td class="price__cell">
+                    600 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Ремонт нарощенных ногтей (1 ноготь)</span>
+                  </td>
+                  <td class="price__cell">
+                    80 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="price-overlay">
+          <div class="container overlay__container price__popup">
+            <button class="price__close unbutton" id="price-close" type="button"></button>
+            <div class="price__block">
+              <h4 class="price__service-name headline">Прочие услуги</h4>
+              <ul class="price__list list">
+                <li class="price__item list__item">
+                  <button class="price__link price__link--open unbutton" type="button">Массаж</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Депиляция</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Косметический кабинет</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Солярий</button>
+                </li>
+              </ul>
+            </div>
+            <div class="price__details" id="other-1-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Антицеллюлитный массаж локальный</span>
+                  </td>
+                  <td class="price__cell">
+                    450 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Антицеллюлитный массаж общий</span>
+                  </td>
+                  <td class="price__cell">
+                    1000 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Расслабляющий массаж спины</span>
+                  </td>
+                  <td class="price__cell">
+                    450 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Расслабляющий массаж общий</span>
+                  </td>
+                  <td class="price__cell">
+                    800 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Спортивный массаж спины</span>
                   </td>
                   <td class="price__cell">
                     500 руб.
                   </td>
                 </tr>
                 <tr class="price__row">
-                  <td class="price__cell price__cell--learn-more">
-                    <span>Ламинирование бровей</span>
+                  <td class="price__cell">
+                    <span>Спортивный массаж общий</span>
                   </td>
                   <td class="price__cell">
+                    900 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="other-2-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Лицо 1 зона</span>
+                  </td>
+                  <td class="price__cell">
+                    150 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Подмышки</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Руки ниже локтя</span>
+                  </td>
+                  <td class="price__cell">
+                    250 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Руки полностью</span>
+                  </td>
+                  <td class="price__cell">
+                    450 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Ноги ниже колен</span>
+                  </td>
+                  <td class="price__cell">
+                    500 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Ноги полностью</span>
+                  </td>
+                  <td class="price__cell">
+                    700 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Ягодицы</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Бикини классика</span>
+                  </td>
+                  <td class="price__cell">
+                    750 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Бикини глубокое</span>
+                  </td>
+                  <td class="price__cell">
+                  900 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="other-3-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--no-header">
+                  <td class="price__cell">
+                    <span>Сыворотки, ампулы</span>
+                  </td>
+                  <td class="price__cell">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Комплексная программа 1</span>
+                  </td>
+                  <td class="price__cell">
+                    1200 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Комплексная программа 2</span>
+                  </td>
+                  <td class="price__cell">
+                    1400 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Комплексная программа 3</span>
+                  </td>
+                  <td class="price__cell">
+                    1600 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Комплексная программа 4</span>
+                  </td>
+                  <td class="price__cell">
+                    1800 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Комплексная программа 5</span>
+                  </td>
+                  <td class="price__cell">
+                    2000 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Прокол одной ушной мочки</span>
+                  </td>
+                  <td class="price__cell">
+                    399 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Прокол хряща</span>
+                  </td>
+                  <td class="price__cell">
+                    599 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Пирсинг на теле</span>
+                  </td>
+                  <td class="price__cell">
+                    800 руб.
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span>Прокол ушных мочек</span>
+                  </td>
+                  <td class="price__cell">
+                    599 руб.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__details" id="other-4-price">
+              <table class="price__table" border="0" cellpadding="0" cellspacing="0">
+                <tr class="price__row price__row--equal">
+                  <th class="price__cell price__cell--header">
+                    Стоимость абонемента
+                  </th>
+                  <th class="price__cell price__cell--header">
+                    Бонус
+                  </th>
+                  <th class="price__cell price__cell--header">
+                    Баланс абонемента
+                  </th>
+                  <th class="price__cell price__cell--header">
+                    Количество минут
+                  </th>
+                </tr>
+                <tr class="price__row price__row--equal">
+                  <td class="price__cell">
+                    500 руб.
+                  </td>
+                  <td class="price__cell">
+                    +150 руб.
+                  </td>
+                  <td class="price__cell">
+                    650 руб.
+                  </td>
+                  <td class="price__cell">
+                    65 мин
+                  </td>
+                </tr>
+                <tr class="price__row price__row--equal">
+                  <td class="price__cell">
                     1000 руб.
+                  </td>
+                  <td class="price__cell">
+                    +500 руб.
+                  </td>
+                  <td class="price__cell">
+                    1500 руб.
+                  </td>
+                  <td class="price__cell">
+                    150 мин
+                  </td>
+                </tr>
+                <tr class="price__row price__row--equal">
+                  <td class="price__cell">
+                    2000 руб.
+                  </td>
+                  <td class="price__cell">
+                    +1500 руб.
+                  </td>
+                  <td class="price__cell">
+                    3500 руб.
+                  </td>
+                  <td class="price__cell">
+                    350 мин
+                  </td>
+                </tr>
+                <tr class="price__row price__row--equal">
+                  <td class="price__cell">
+                    4000 руб.
+                  </td>
+                  <td class="price__cell">
+                    +4000 руб.
+                  </td>
+                  <td class="price__cell">
+                    8000 руб.
+                  </td>
+                  <td class="price__cell">
+                    800 мин
                   </td>
                 </tr>
               </table>
@@ -1521,9 +2223,11 @@
         c = a + "-close";
         document.getElementById(a).onclick = function() {
           document.getElementById(b).style = "display: flex;";
+          document.body.classList.add("noscroll");
         };
         document.getElementById(c).onclick = function() {
           document.getElementById(b).style = "display: none;";
+          document.body.classList.remove("noscroll");
         };
       }
       open("price-haircut", "price-overlay");
