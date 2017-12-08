@@ -5,6 +5,10 @@
   line-height: 22px;
   font-family: $bold-font;
   color: #ffffff;
+
+  &--dark {
+    color: $headline-color;
+  }
 }
 
 .rating__stars {

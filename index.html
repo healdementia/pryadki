@@ -2018,7 +2018,7 @@
           </ul>
           <div class="feedback__footer">
             <button class="feedback__leave-feedback button" id="leave-feedback" type="button" onclick="toggleThis(this.id)">Оставить отзыв</button>
-            <button class="feedback__more button" type="button">Ещё отзывы</button>
+            <a class="feedback__more button" href="feedback.html">Ещё отзывы</a>
           </div>
         </div>
         <div class="overlay" id="leave-feedback-overlay">
@@ -2063,7 +2063,7 @@
                     <p class="agree__conditions-text agree__conditions-text--dark">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link agree__link--dark" href="#">Условиями</a></p>
                   </label>
                 </div>
-                <button class="feedback__submit button" type="button">Отправить</button>
+                <button class="feedback__submit form__submit button" type="button">Отправить</button>
               </form>
             </div>
           </div>
@@ -2100,8 +2100,14 @@
           <form class="secret-shopper__form" method="post">
             <div class="secret-shopper__inputs">
               <div class="secret-shopper__group">
-                <input class="secret-shopper__input" type="text" id="office" name="office" value="" placeholder="&nbsp;" required>
-                <label class="secret-shopper__label" for="office">Выберите офис</label>
+                <!-- input class="secret-shopper__input" type="text" id="office" name="office" value="" placeholder="&nbsp;" required>
+                <label class="secret-shopper__label" for="office">Выберите офис</label -->
+                <select class="secret-shopper__select" id="office-select">
+                  <option selected disabled hidden>Выберите офис</option>
+                  <option value="Ленина">на Ленина</option>
+                  <option value="Кирова">на Кирова</option>
+                  <option value="К. Маркса">на К. Маркса</option>
+                </select>
               </div>
               <div class="secret-shopper__group">
                 <input class="secret-shopper__input" type="email" id="email" name="email" value="" placeholder="&nbsp;" required>
@@ -2207,7 +2213,6 @@
     </footer>
 
     <script>
-      var buttons = ["leave-feedback", "secret-shopper-popup"];
       function open(a, b) {
         document.getElementById(a).onclick = function() {
           document.getElementById(b).style = "display: flex;";

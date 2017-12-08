@@ -125,8 +125,15 @@
                 <p class="agree__conditions-text">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link" href="#">Условиями</a></p>
               </label>
             </div>
-            <button class="letter__submit button" type="button">Отправить</button>
+            <button class="letter__submit button" type="button" id="send-letter">Отправить</button>
           </form>
+        </div>
+        <div class="overlay" id="send-letter-overlay">
+          <div class="letter__popup popup">
+            <button class="popup__close unbutton" id="send-letter-close" type="button"></button>
+            <b class="popup__strong">Ваша заявка получена. Спасибо!</b>
+            <p class="popup__text">Менеджер свяжется с вами в ближайшее время.</p>
+          </div>
         </div>
       </section>
 
@@ -208,6 +215,15 @@
       </section>
 
     </footer>
+
+    <script>
+      document.getElementById("send-letter").onclick = function() {
+        document.getElementById("send-letter-overlay").style = "display: flex;"
+      }
+      document.getElementById("send-letter-close").onclick = function() {
+        document.getElementById("send-letter-overlay").style = "display: none;"
+      }
+    </script>
 
   </body>
 
