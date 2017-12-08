@@ -66,29 +66,50 @@
       <section class="price price--page">
         <div class="container">
           <h2 class="price__headline headline">Услуги и цены</h3>
-          <div class="price__body price__body--page">
-            <div class="price__block">
-              <h4 class="price__service-name headline">Женский зал</h4>
+          <div class="price__body price--page__body">
+            <div class="price__block price--page__block">
+              <h4 class="price__service-name headline">Выберите категорию</h4>
               <ul class="price__list list">
                 <li class="price__item list__item">
-                  <button class="price__link price__link--open unbutton" type="button">Стрижки</button>
+                  <button class="price__link price__link--open unbutton" type="button">Женский зал</button>
+                  <ul class="price__sublist list">
+                    <li class="price__subitem list__item">
+                      <a class="price__sublink" href="#women-1">Стрижки</a>
+                    </li>
+                    <li class="price__subitem list__item">
+                      <a class="price__sublink" href="#women-2">Укладка и причёски</a>
+                    </li>
+                    <li class="price__subitem list__item">
+                      <a class="price__sublink" href="#women-3">Восстановление волос</a>
+                    </li>
+                    <li class="price__subitem list__item">
+                      <a class="price__sublink" href="#women-4">Макияж и брови</a>
+                    </li>
+                    <li class="price__subitem list__item">
+                      <a class="price__sublink" href="#women-5">Дополнительные услуги</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="price__item list__item">
-                  <button class="price__link unbutton" type="button">Укладка и причёски</button>
+                  <button class="price__link unbutton" type="button">Мужской зал</button>
                 </li>
                 <li class="price__item list__item">
-                  <button class="price__link unbutton" type="button">Восстановление волос</button>
+                  <button class="price__link unbutton" type="button">Детский зал</button>
                 </li>
                 <li class="price__item list__item">
-                  <button class="price__link unbutton" type="button">Макияж и брови</button>
+                  <button class="price__link unbutton" type="button">Окрашивание волос</button>
                 </li>
                 <li class="price__item list__item">
-                  <button class="price__link unbutton" type="button">Дополнительные услуги</button>
+                  <button class="price__link unbutton" type="button">Маникюрный кабинет</button>
+                </li>
+                <li class="price__item list__item">
+                  <button class="price__link unbutton" type="button">Прочие услуги</button>
                 </li>
               </ul>
             </div>
-            <div class="price__details price__details--page" id="women-price-details">
-              <table class="price__table price__table--page" border="0" cellpadding="0" cellspacing="0">
+            <div class="price__details price--page__details" id="women-price-details">
+              <table class="price__table price--page__table" border="0" cellpadding="0" cellspacing="0">
+                <a name="women-1"></a>
                 <caption class="price__table-caption">
                   <h5 class="price__table-headline headline">Стрижки</h5>
                 </caption>
@@ -187,7 +208,8 @@
                   </tr>
                 </tbody>
               </table>
-              <table class="price__table price__table--page" border="0" cellpadding="0" cellspacing="0">
+              <table class="price__table price--page__table" border="0" cellpadding="0" cellspacing="0">
+                <a name="women-2"></a>
                 <caption class="price__table-caption">
                   <h5 class="price__table-headline headline">Укладка и причёски</h5>
                 </caption>
@@ -244,7 +266,8 @@
                   </tr>
                 </tbody>
               </table>
-              <table class="price__table price__table--page" border="0" cellpadding="0" cellspacing="0">
+              <table class="price__table price--page__table" border="0" cellpadding="0" cellspacing="0">
+                <a name="women-3"></a>
                 <caption class="price__table-caption">
                   <h5 class="price__table-headline headline">Восстановление волос</h5>
                 </caption>
@@ -381,7 +404,8 @@
                   </tr>
                 </tbody>
               </table>
-              <table class="price__table price__table--page" border="0" cellpadding="0" cellspacing="0">
+              <table class="price__table price--page__table" border="0" cellpadding="0" cellspacing="0">
+                <a name="women-4"></a>
                 <caption class="price__table-caption">
                   <h5 class="price__table-headline headline">Макияж и брови</h5>
                 </caption>
@@ -507,7 +531,8 @@
                   </tr>
                 </tbody>
               </table>
-              <table class="price__table price__table--page" border="0" cellpadding="0" cellspacing="0">
+              <table class="price__table price--page__table" border="0" cellpadding="0" cellspacing="0">
+                <a name="women-5"></a>
                 <caption class="price__table-caption">
                   <h5 class="price__table-headline headline">Дополнительные услуги</h5>
                 </caption>
@@ -634,7 +659,9 @@
 
       <section class="bottom">
         <div class="container bottom__container">
-          <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
+          <a href="index.html">
+            <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
+          </a>
           <div class="bottom__social">
             <span class="bottom__text">Мы в социальных сетях: </span>
             <ul class="bottom__list social list">

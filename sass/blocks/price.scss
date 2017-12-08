@@ -43,7 +43,7 @@
   }
 }
 
-.price--page .price__block {
+.price--page__block {
   text-align: center;
 }
 
@@ -131,6 +131,29 @@
   }
 }
 
+.price__sublist {
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.price__subitem {
+  padding: 4px 0;
+}
+
+.price__sublink {
+  font-size: 16px;
+  color: rgba($headline-color, 0.7);
+
+  &:hover,
+  &:focus {
+    color: rgba($headline-color, 0.9);
+  }
+
+  &:active {
+    color: $headline-color;
+  }
+}
+
 .price__popup {
   position: relative;
   display: flex;
@@ -165,11 +188,11 @@
 
 .price__table {
   width: 100%;
+}
 
-  &--page {
-    padding: 33px 40px;
-    background-color: #ffffff;
-  }
+.price--page__table {
+  padding: 33px 40px;
+  background-color: #ffffff;
 }
 
 .price__details {
@@ -179,11 +202,11 @@
   height: auto;
   padding: 34px 37px 32px 47px;
   background-color: #ffffff;
+}
 
-  &--page {
-    padding: 0;
-    background-color: transparent;
-  }
+.price--page__details {
+  padding: 0;
+  background-color: transparent;
 }
 
 .price__cell {
@@ -415,7 +438,7 @@
   }
 
   .price__popup,
-  .price__body--page {
+  .price--page__body {
     height: 100%;
     padding-top: 90px;
     overflow: scroll;
@@ -426,7 +449,7 @@
   }
 
   .price__popup .price__block,
-  .price--page .price__block {
+  .price--page__block {
     width: 300px;
     padding: 28px;
   }
@@ -436,7 +459,7 @@
     padding: 28px;
   }
 
-  .price__details--page {
+  .price--page__details {
     padding: 0;
   }
 
@@ -461,7 +484,11 @@
     padding: 36px;
   }
 
-  .price--page .price__block {
+  .price--page__body {
+    padding-top: 32px;
+  }
+
+  .price--page__block {
     width: 368px;
   }
 
@@ -473,7 +500,7 @@
 
 @media (max-width: 699px) {
   .price__popup,
-  .price__body--page {
+  .price--page__body {
     justify-content: flex-start;
   }
 

@@ -1,7 +1,7 @@
 .main-nav {
   background-color: #ffffff;
 
-  &--contact {
+  &--border {
     border-bottom: 1px solid #c4c4c4;
   }
 }
@@ -79,10 +79,10 @@
     margin-top: 5px;
     padding-top: 5px;
     border-top: 2px solid $theme-color;
+  }
 
-    &--contact {
-      border: 0;
-    }
+  .main-nav--border__menu {
+    border: 0;
   }
 }
 
