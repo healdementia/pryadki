@@ -2,6 +2,10 @@
   padding-top: 95px;
   padding-bottom: 90px;
   background-color: #ffffff;
+
+  &--sale {
+    background-color: $theme-color;
+  }
 }
 
 .subscription__container {
@@ -28,12 +32,38 @@
   }
 }
 
+.subscription--sale__headline {
+  color: #ffffff;
+
+  &::before {
+    background-image: url("../img/icon-curl-white-left.svg");
+  }
+
+  &::after {
+    background-image: url("../img/icon-curl-white-right.svg");
+  }
+}
+
 .subscription__mockup {
   display: inline-block;
 }
 
 .subscription__subscribe {
   margin-top: 40px;
+}
+
+.subscription--sale__subscribe {
+  color: #ffffff;
+  background-color: $text-color;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($text-color, 5%);
+  }
+
+  &:active {
+    background-color: lighten($text-color, 10%);
+  }
 }
 
 ////// r e s p o n s i v e //////

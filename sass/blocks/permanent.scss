@@ -55,6 +55,12 @@
     background-position: 20px top;
     background-size: 77px 94px;
   }
+
+  &--heart {
+    background-image: url("../img/icon-heart-drawing.svg");
+    background-position: 18px center;
+    background-size: 90px 80px;
+  }
 }
 
 .permanent__see-all {
@@ -101,6 +107,11 @@
     &--birthday {
       background-position: 5px center;
       background-size: 60px auto;
+    }
+
+    &--heart {
+      background-position: left center;
+      background-size: 66px auto;
     }
   }
 }
