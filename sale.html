@@ -65,19 +65,30 @@
         <div class="container">
           <h1 class="sale__headline headline">Актуальные скидки и акции в городе Ижевск</h1>
           <ul class="sale__list permanent__list list">
-            <li class="sale__item sale__item--current permanent__item list__item" id="offer-1">
+            <li class="sale__item sale__item--current permanent__item list__item" id="sale-1">
               <span class="permanent__info permanent__info--heart">При окрашивании 10—20 декабря укладка в подарок!</span>
             </li>
-            <li class="sale__item permanent__item list__item" id="offer-2">
+            <li class="sale__item permanent__item list__item" id="sale-2">
               <span class="permanent__info permanent__info--sale">Приходите в выгодные дни и получайте скидки на некоторые услуги</span>
             </li>
-            <li class="sale__item permanent__item list__item" id="offer-3">
+            <li class="sale__item permanent__item list__item" id="sale-3">
               <span class="permanent__info permanent__info--scissors">Каждая 6-я стрижка бесплатно! (или маникюр в подарок)</span>
             </li>
-            <li class="sale__item permanent__item list__item" id="offer-4">
+            <li class="sale__item permanent__item list__item" id="sale-4">
               <span class="permanent__info permanent__info--birthday">Всем именинникам&nbsp;&mdash; СКИДКА 10%</span>
             </li>
           </ul>
+        </div>
+        <div class="overlay" id="sale-1-overlay">
+          <div class="container overlay__container sale__popup current current--sale">
+            <button class="sale__close unbutton" id="sale-1-close" type="button"></button>
+            <div class="current__body current--sale__body">
+              <div class="current__info current--sale__info">
+                <p class="current__text current--sale__text">При окрашивании 10&mdash;20 декабря укладка в подарок!</p>
+                <button class="current__book current--sale__book button" type="button">Записаться</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -177,6 +188,15 @@
       </section>
 
     </footer>
+
+    <script>
+      document.getElementById("sale-1").onclick = function() {
+        document.getElementById("sale-1-overlay").style = "display: flex;"
+      }
+      document.getElementById("sale-1-close").onclick = function() {
+        document.getElementById("sale-1-overlay").style = "display: none;"
+      }
+    </script>
 
   </body>
 

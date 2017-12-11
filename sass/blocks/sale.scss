@@ -40,6 +40,34 @@
   }
 }
 
+.sale__popup {
+  position: relative;
+  width: 599px;
+}
+
+.sale__close {
+  position: absolute;
+  display: block;
+  top: 38px;
+  right: 0;
+  width: 25px;
+  height: 26px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 ////// r e s p o n s i v e //////
 
 @media (max-width: 1199px) {
@@ -67,6 +95,11 @@
   }
 
   .sale__item {
+    width: 100%;
+    max-width: 499px;
+  }
+
+  .sale__popup {
     width: 100%;
     max-width: 499px;
   }

@@ -2,6 +2,10 @@
   width: 600px;
   text-align: center;
 
+  &--sale {
+    flex-grow: 0;
+    margin-right: auto;
+  }
 }
 
 .current__body {
@@ -18,12 +22,20 @@
   }
 }
 
+.current--sale__body {
+  background-size: contain;
+}
+
 .current__info {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 58px 135px;
   background-color: #182138;
+}
+
+.current--sale__info {
+  background-color: #ffffff;
 }
 
 .current__text {
@@ -34,6 +46,10 @@
   font-family: $semibold-font;
   letter-spacing: 0.2px;
   color: #ffffff;
+}
+
+.current--sale__text {
+  color: $text-color;
 }
 
 .current__book {
@@ -51,6 +67,20 @@
   }
 }
 
+.current--sale__book {
+  color: #ffffff;
+  background-color: $theme-color;
+
+  &:hover,
+  &:focus {
+    background-color: darken($theme-color, 3%);
+  }
+
+  &:active {
+    background-color: darken($theme-color, 6%);
+  }
+}
+
 ////// r e s p o n s i v e //////
 
 @media (max-width: 1199px) {
@@ -59,6 +89,11 @@
     width: 300px;
     margin-right: 40px;
     flex-grow: 1;
+
+    &--sale {
+      flex-grow: 0;
+      margin-right: auto;
+    }
   }
 
   .current__info {
@@ -76,18 +111,31 @@
   .current__info {
     padding: 50px 24px;
   }
+
+  .current--sale__body {
+    height: 525px;
+  }
 }
 
 @media (max-width: 699px) {
   .current {
     width: 100%;
     margin-right: 0;
+
+    &--sale {
+      flex-grow: 0;
+      margin-right: auto;
+    }
   }
 
   .current__body {
     height: 430px;
     background-position: center -30px;
     background-size: cover;
+  }
+
+  .current--sale__body {
+    background-size: contain;
   }
 
   .current__info {
