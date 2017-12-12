@@ -15,7 +15,8 @@
   border-bottom: 3px solid #ffffff;
 }
 
-.main-office__info {
+.main-office__info,
+.main-office__info > a {
   margin: 0 auto;
   max-width: 450px;
   font-size: 18px;

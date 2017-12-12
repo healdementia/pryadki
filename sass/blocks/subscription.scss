@@ -3,7 +3,7 @@
   padding-bottom: 90px;
   background-color: #ffffff;
 
-  &--sale {
+  &--inner {
     background-color: $theme-color;
   }
 }
@@ -32,7 +32,7 @@
   }
 }
 
-.subscription--sale__headline {
+.subscription--inner__headline {
   color: #ffffff;
 
   &::before {
@@ -52,7 +52,7 @@
   margin-top: 40px;
 }
 
-.subscription--sale__subscribe {
+.subscription--inner__subscribe {
   color: #ffffff;
   background-color: $text-color;
 

@@ -1,0 +1,37 @@
+.no-vacancy {
+  padding-top: 98px;
+  padding-bottom: 73px;
+  text-align: center;
+  background-color: $theme-color;
+}
+
+.no-vacancy__headline {
+  margin-bottom: 23px;
+  color: #ffffff;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.no-vacancy__subline {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $semibold-font;
+  color: #ffffff;
+}
+
+.no-vacancy__link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+////// r e s p o n s i v e //////
+
+.no-vacancy {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}

@@ -45,6 +45,10 @@
   &:active {
     color: darken($theme-color, 5%);
   }
+
+  &--active {
+    font-family: $bold-font;
+  }
 }
 
 .main-nav__contact {

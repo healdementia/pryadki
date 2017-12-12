@@ -12,10 +12,28 @@
   margin-bottom: 15px;
 }
 
+.nearest--inner__headline {
+  margin-bottom: 37px;
+  font-size: 32px;
+  line-height: 32px;
+  font-family: $bold-font;
+}
+
 .nearest__subline {
   font-size: 28px;
   line-height: 32px;
   margin-bottom: 32px;
+}
+
+.nearest--inner__subline {
+  margin-top: 0;
+  margin-bottom: 70px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.nearest--inner__subline > span {
+  font-family: $semibold-font;
 }
 
 .nearest__list {
@@ -100,15 +118,38 @@
 
 ////// r e s p o n s i v e //////
 
-
-@media (max-width: 1199px) {
-  .nearest {
+@media (max-width: 1399px) {
+  .nearest--inner {
     padding-top: 60px;
     padding-bottom: 74px;
   }
 }
 
+
+@media (max-width: 1199px) {
+  .nearest {
+    padding-top: 60px;
+    padding-bottom: 74px;
+
+    &--inner {
+      padding-top: 48px;
+      padding-bottom: 60px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
+  .nearest--inner__headline {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .nearest--inner__subline {
+    margin-bottom: 44px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .nearest__list {
     justify-content: space-around;
   }

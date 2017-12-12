@@ -7,6 +7,8 @@
 .list__item {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .button {
@@ -55,6 +57,10 @@
       opacity: 0.8;
     }
   }
+}
+
+.button__icon {
+  display: none;
 }
 
 .headline {
@@ -353,6 +359,14 @@
 @media (max-width: 699px) {
   .form {
     width: 100%;
+  }
+
+  .button__text {
+    display: none;
+  }
+
+  .button__icon {
+    display: block;
   }
 }
 

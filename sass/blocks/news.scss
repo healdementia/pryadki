@@ -1,0 +1,154 @@
+.news {
+  padding-top: 94px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.news__headline {
+  margin-bottom: 58px;
+  letter-spacing: 0.6px;
+}
+
+.news__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news__item {
+  flex-basis: auto;
+  width: 370px;
+  margin-bottom: 30px;
+  background-color: #fafafa;
+
+  &:hover {
+    background-color: darken(#fafafa, 1%);
+    cursor: pointer;
+  }
+
+  &:hover .news__info {
+    background-color: darken(#fafafa, 1%);
+  }
+
+  &:hover .news__pic {
+    opacity: 0.9;
+  }
+}
+
+.news__pic {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.news__info {
+  margin: 0;
+  padding: 56px 45px 50px;
+  background-color: #fafafa;
+}
+
+.news__name {
+  display: block;
+  min-height: 48px;
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 24px;
+  color: $accent-color;
+  font-family: $bold-font;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.news__more {
+  width: 100%;
+}
+
+.news__close {
+  position: absolute;
+  display: block;
+  top: 38px;
+  right: 15px;
+  width: 25px;
+  height: 26px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 1199px) {
+  .news__item {
+    width: 32%;
+  }
+
+  .news__info {
+    padding: 56px 36px 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .news {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .news__headline {
+    margin-bottom: 30px;
+  }
+
+  .news__item {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news__list {
+    justify-content: space-around;
+  }
+
+  .news__item {
+    max-width: 370px;
+  }
+
+  .news__info {
+    padding: 39px 36px 44px
+  }
+
+  .news__name {
+    min-height: auto;
+  }
+
+  .news__close {
+    right: 20px;
+  }
+}
+
+@media (max-width: 499px) {
+  .news__close {
+    left: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .news__popup {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .news__close {
+    left: 5px;
+  }
+}

@@ -6,6 +6,11 @@
 
 .sale__headline {
   margin-bottom: 38px;
+
+  &::before,
+  &::after {
+    display: none;
+  }
 }
 
 .sale__list {
@@ -43,13 +48,15 @@
 .sale__popup {
   position: relative;
   width: 599px;
+  padding-right: 15px;
+  overflow-x: auto;
 }
 
 .sale__close {
   position: absolute;
   display: block;
   top: 38px;
-  right: 0;
+  right: 15px;
   width: 25px;
   height: 26px;
   background-image: url("../img/icon-cross.svg");

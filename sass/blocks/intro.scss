@@ -1,6 +1,6 @@
 .intro {
   width: 100%;
-  min-height: 699px;
+  height: 699px;
   background-image: url("../img/index-intro-rectangle.svg"), url("../img/index-intro-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -10,10 +10,25 @@
         (min-resolution: $retina-dppx) {
     background-image: url("../img/index-intro-rectangle.svg"), url("../img/index-intro-bg@2x.jpg");
   }
+
+  &--inner {
+    height: 554px;
+    background-image: url("../img/inner-intro-rectangle.svg"), url("../img/job-intro-bg.jpg");
+    background-size: cover, cover;
+
+    @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
+      background-image: url("../img/inner-intro-rectangle.svg"), url("../img/job-intro-bg@2x.jpg");
+    }
+  }
 }
 
 .intro__container {
   max-width: 350px;
+}
+
+.intro--inner__container {
+  max-width: 573px;
 }
 
 .intro__headline {
@@ -36,10 +51,27 @@
   }
 }
 
+.intro--inner__headline {
+  margin-bottom: 91px;
+  padding-top: 130px;
+  font-size: 48px;
+  line-height: 60px;
+
+  &::after {
+    bottom: -42px;
+    width: 150px;
+    height: 5px;
+  }
+}
+
 .intro__subline {
   font-size: 20px;
   line-height: 30px;
   font-family: $semibold-font;
+}
+
+.intro--inner__subline {
+  font-size: 22px;
 }
 
 .intro__subline > span {
@@ -58,12 +90,26 @@
 @media (max-width: 1699px) {
   .intro {
     background-position: -200px 0, center;
+
+    &--inner {
+      background-position: -600px 0, center;
+    }
   }
 }
 
 @media (max-width: 1399px) {
   .intro {
     background-position: -320px 0, center;
+
+    &--inner {
+      background-position: -510px 0, center;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .intro--inner__container {
+    max-width: 450px;
   }
 }
 
@@ -71,22 +117,55 @@
   .intro {
     background-position: -410px 0, center;
     background-size: cover, cover;
+
+    &--inner {
+      background-image: url("../img/inner-intro-rectangle.svg"), url("../img/job-intro-bg-small-desktop.jpg");
+      background-position: -520px, 80% 0;
+
+      @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+        background-image: url("../img/inner-intro-rectangle.svg"),  url("../img/job-intro-bg-small-desktop@2x.jpg");
+      }
+    }
+  }
+
+  .intro--inner__container {
+    max-width: 380px;
+  }
+
+  .intro--inner__headline {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 768px) {
   .intro {
     background-position: -560px 0, 55% 0;
+
+    &--inner {
+      background-position: -630px 0, 74% 0;
+    }
   }
 
   .intro__container {
     max-width: 300px;
   }
 
+  .intro--inner__container {
+    max-width: 350px;
+  }
+
   .intro__headline {
     margin-bottom: 78px;
     font-size: 48px;
     line-height: 66px;
+  }
+
+  .intro--inner__headline {
+    padding-top: 96px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .intro__book {
@@ -98,9 +177,30 @@
 
 @media (max-width: 499px) {
   .intro {
-    min-height: auto;
+    height: auto;
+    background-image: url("../img/index-intro-rectangle.svg"), url("../img/index-intro-bg-small-desktop.jpg");
     background-position: center, 55% 0;
     background-size: 250%, cover;
+
+    @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-intro-rectangle.svg"), url("../img/index-intro-bg-small-desktop@2x.jpg");
+    }
+
+    &--inner {
+      background-image: url("../img/inner-intro-rectangle.svg"), url("../img/job-intro-bg-small-desktop.jpg");
+      background-position: center, 73% 0;
+      background-size: 300%, cover;
+
+      @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+        background-image: url("../img/inner-intro-rectangle.svg"),  url("../img/job-intro-bg-small-desktop@2x.jpg");
+      }
+    }
+  }
+
+  .intro--inner__container {
+    max-width: 100%;
   }
 
   .intro__headline {
@@ -109,5 +209,9 @@
 
   .intro__book {
     margin-bottom: 50px;
+  }
+
+  .intro--inner__subline {
+    padding-bottom: 50px;
   }
 }

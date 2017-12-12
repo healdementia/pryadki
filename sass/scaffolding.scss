@@ -16,6 +16,11 @@ a {
   &:focus {
     outline: 0;
   }
+
+  &[href^="tel"] {
+    color: inherit;
+    text-decoration: inherit;
+  }
 }
 
 b {
@@ -35,6 +40,14 @@ img {
 *::before,
 *::after {
   display: block;
+}
+
+select {
+  border-radius: 0;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .visually-hidden {
@@ -87,6 +100,7 @@ img {
   height: 100%;
   margin: auto;
   padding-top: 90px;
+  padding-right: 15px;
   overflow: scroll;
   z-index: 4;
 }

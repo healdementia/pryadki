@@ -1,0 +1,114 @@
+.reasons {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url("../img/hairy-woman.svg");
+  background-repeat: no-repeat;
+  background-position: 30px 200px;
+  background-size: 330px auto;
+}
+
+.reasons__headline {
+  margin-bottom: 53px;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.5px;
+  font-family: $bold-font;
+}
+
+.reasons__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reasons__item {
+  flex-basis: auto;
+  width: 370px;
+  padding: 185px 60px 67px;
+  text-align: left;
+  background-color: $theme-color;
+  background-repeat: no-repeat;
+  background-position: 60px 50px;
+  background-size: 100px 100px;
+
+  &--regime {
+    background-image: url("../img/icon-regime.svg");
+  }
+
+  &--salary {
+    background-image: url("../img/icon-salary.svg");
+  }
+
+  &--sertificate {
+    background-image: url("../img/icon-sertificate.svg");
+  }
+}
+
+.reasons__name {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: $semibold-font;
+  color: #ffffff;
+}
+
+.reasons__text {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 1399px) {
+  .reasons {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-image: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .reasons__item {
+    width: 32%;
+    padding: 185px 32px 36px;
+    background-position: 32px 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .reasons {
+    padding-top: 30px;
+    padding-bottom: 34px;
+  }
+
+  .reasons__headline {
+    margin-bottom: 28px;
+  }
+
+  .reasons__item {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 32px;
+    padding-right: 34px;
+    padding-bottom: 36px;
+    padding-left: 168px;
+    background-position: 34px center;
+  }
+}
+
+@media (max-width: 499px) {
+  .reasons__list {
+    justify-content: center;
+  }
+
+  .reasons__item {
+    max-width: 320px;
+    margin-bottom: 20px;
+    padding: 168px 32px 36px;
+    background-position: 32px 34px;
+  }
+}
