@@ -234,6 +234,62 @@
             </div>
           </div>
         </div>
+        <div class="overlay" id="send-cv-overlay">
+          <div class="container overlay__container">
+            <div class="vacancies__popup">
+              <button class="vacancies__close unbutton unbutton--close" id="send-cv-close"></button>
+              <h3 class="vacancies__call-to-action">Вы можете отправить своё готовое резюме или создать его прямо сейчас!</h3>
+              <form class="vacancies__form form">
+                <div class="vacancies__half form__half">
+                  <fieldset class="vacancies__fieldset form__fieldset">
+                    <legend class="vacancies__legend form__legend">Нажмите, чтобы загрузить резюме:</legend>
+                    <div class="vacancies__group form__group">
+                      <input class="vacancies__upload form__upload visually-hidden" id="upload" type="file">
+                      <label class="vacancies__upload-text form__upload-text" for="upload">Прикрепить файл</label>
+                    </div>
+                    <div class="vacancies__group form__group">
+                      <textarea class="vacancies__message form__message" id="message" placeholder="&nbsp;" value=""></textarea>
+                      <label class="vacancies__label form__label" for="message">Ваш комментарий<br><span>(необязательно)</span></label>
+                    </div>
+                  </fieldset>
+                  <div class="vacancies__agree agree">
+                    <input class="agree__input visually-hidden" type="checkbox" id="vacancies-agree" name="agree" required>
+                    <label class="agree__label" for="vacancies-agree">
+                      <span class="agree__checkbox agree__checkbox--dark"></span>
+                      <p class="agree__conditions-text agree__conditions-text--dark">Нажимая кнопку &laquo;Отправить&raquo;, я подтверждаю свою дееспособность, даю согласие на обработку моих персональных данных в соответствии с <a class="agree__link agree__link--dark" href="#">Условиями</a></p>
+                    </label>
+                  </div>
+                </div>
+                <div class="vacancies__half form__half">
+                  <fieldset class="vacancies__fieldset form__fieldset">
+                    <legend class="vacancies__legend form__legend">Заполните форму:</legend>
+                    <div class="vacancies__group form__group">
+                      <input class="vacancies__input form__input" id="name" type="text" placeholder="&nbsp;" value="">
+                      <label class="vacancies__label form__label" for="name">ФИО</label>
+                    </div>
+                    <div class="vacancies__group form__group">
+                      <input class="vacancies__input form__input" id="education" type="text" placeholder="&nbsp;" value="">
+                      <label class="vacancies__label form__label" for="education">Образование</label>
+                    </div>
+                    <div class="vacancies__group form__group">
+                      <input class="vacancies__input form__input" id="practice" type="text" placeholder="&nbsp;" value="">
+                      <label class="vacancies__label form__label" for="practice">Опыт работы</label>
+                    </div>
+                    <div class="vacancies__group form__group">
+                      <input class="vacancies__input form__input" id="email" type="email" placeholder="&nbsp;" value="">
+                      <label class="vacancies__label form__label" for="email">E-mail</label>
+                    </div>
+                    <div class="vacancies__group form__group">
+                      <input class="vacancies__input form__input" id="tel" type="tel" placeholder="&nbsp;" value="">
+                      <label class="vacancies__label form__label" for="tel">Телефон</label>
+                    </div>
+                    <button class="vacancies__submit button" type="button">Отправить</button>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="nearest nearest--inner">
@@ -370,11 +426,11 @@
     </footer>
 
     <script>
-      document.getElementById("read-more").onclick = function() {
-        document.getElementById("news-overlay").style = "display: flex;"
+      document.getElementById("send-cv").onclick = function() {
+        document.getElementById("send-cv-overlay").style = "display: flex;"
       }
-      document.getElementById("news-close").onclick = function() {
-        document.getElementById("news-overlay").style = "display: none;"
+      document.getElementById("send-cv-close").onclick = function() {
+        document.getElementById("send-cv-overlay").style = "display: none;"
       }
     </script>
 

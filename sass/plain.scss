@@ -59,6 +59,42 @@
   }
 }
 
+.unbutton {
+  margin: 0;
+  padding: 0;
+  font-family: $basic-font;
+  text-align: left;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+
+  &--close {
+    position: absolute;
+    display: block;
+    top: -42px;
+    right: 0;
+    width: 25px;
+    height: 26px;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    &:focus,
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
 .button__icon {
   display: none;
 }
@@ -179,6 +215,33 @@
   text-align: left;
 }
 
+.form__upload-text {
+  display: block;
+  padding: 17px 34px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  font-family: $black-font;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $theme-color;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: darken($theme-color, 5%);
+    cursor: pointer;
+  }
+}
+
+.form__upload:focus ~ .form__upload-text {
+  background-color: darken($theme-color, 5%);
+}
+
+.form__upload:active ~ .form__upload-text {
+  background-color: darken($theme-color, 10%);
+}
+
 .form__input,
 .form__message {
   width: 100%;
@@ -248,6 +311,11 @@
 .form__message:focus ~ label {
   top: 0;
   font-size: 10px;
+}
+
+.form__input:focus ~ label > span,
+.form__message:focus ~ label > span {
+  display: none;
 }
 
 .form__input:not([value=""]):not(:focus) ~ label,
