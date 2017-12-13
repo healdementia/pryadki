@@ -1,14 +1,15 @@
 .vacancies {
   padding-top: 99px;
   padding-bottom: 99px;
+  text-align: center;
   background-color: $accent-color;
 }
 
 .vacancies__headline {
-  display: block;
-  margin-bottom: 46px;
+  display: inline-block;
+  letter-spacing: 0.6px;
+  font-family: $bold-font;
   color: #ffffff;
-  text-align: center;
 
   &::before,
   &::after {
@@ -20,6 +21,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 46px;
+  text-align: left;
 }
 
 .vacancies__item {

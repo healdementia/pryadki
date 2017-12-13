@@ -109,7 +109,24 @@
 
       <section class="vacancies">
         <div class="container">
-          <h2 class="vacancies__headline headline">Актуальные вакансии в городе: Ижевск</h2>
+          <h2 class="vacancies__headline headline">Актуальные вакансии в городе:&nbsp;</h2>
+          <div class="dropdown">
+            <button class="dropdown__button unbutton" id="select-city" type="button">Ижевск</button>
+            <form class="dropdown__form" id="select-city-form">
+              <div class="dropdown__group">
+                <input class="dropdown__input visually-hidden" type="radio" id="city-1" name="select-city" value="Ижевск" onclick="check()" checked>
+                <label class="dropdown__label" for="city-1">Ижевск</label>
+              </div>
+              <div class="dropdown__group">
+                <input class="dropdown__input visually-hidden" type="radio" id="city-2" name="select-city" value="Москва" onclick="check()">
+                <label class="dropdown__label" for="city-2">Москва</label>
+              </div>
+              <div class="dropdown__group">
+                <input class="dropdown__input visually-hidden" type="radio" id="city-3" name="select-city" value="Воткинск" onclick="check()">
+                <label class="dropdown__label" for="city-3">Воткинск</label>
+              </div>
+            </form>
+          </div>
           <div class="vacancies__list">
             <div class="vacancies__item">
               <h3 class="vacancies__name">Парикмахер</h5>
@@ -432,6 +449,23 @@
       document.getElementById("send-cv-close").onclick = function() {
         document.getElementById("send-cv-overlay").style = "display: none;"
       }
+
+      document.getElementById("select-city").onclick = function() {
+        if (form.style.display === "none") {
+          form.style.display = "block";
+        } else if (form.style.display === "block") {
+          form.style.display = "none";
+        }
+      }
+
+      var form = document.getElementById("select-city-form");
+      function check() {
+        document.getElementById("select-city").innerHTML = form.querySelector(".dropdown__input:checked").value;
+        form.style = "display: none;";
+      }
+
+      window.onload = check();
+
     </script>
 
   </body>

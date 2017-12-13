@@ -96,8 +96,21 @@ select::-ms-expand {
   margin: auto;
   padding-top: 90px;
   padding-right: 15px;
-  overflow: scroll;
+  overflow: overlay;
   z-index: 4;
+}
+
+@-moz-document url-prefix() {
+  .overlay__container {
+    overflow: auto;
+  }
+}
+
+@media all and (-ms-high-contrast: none),
+              (-ms-high-contrast: active) {
+  .overlay__container {
+    overflow: auto;
+  }
 }
 
 .noscroll {
@@ -115,6 +128,10 @@ select::-ms-expand {
 @media (max-width: 991px) {
   .container {
     max-width: 750px;
+  }
+
+  .overlay__container {
+    overflow-y: auto;
   }
 }
 

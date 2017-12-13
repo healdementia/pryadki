@@ -325,6 +325,15 @@
   display: none;
 }
 
+@media all and (-ms-high-contrast: none),
+              (-ms-high-contrast: active) {
+  .form__label {
+    top: 2px;
+    font-size: 14px;
+    color: #a0a0a0;
+  }
+}
+
 .form__group--rating {
   display: flex;
   justify-content: space-between;

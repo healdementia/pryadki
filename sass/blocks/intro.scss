@@ -14,6 +14,7 @@
   &--inner {
     height: 554px;
     background-image: url("../img/inner-intro-rectangle.svg"), url("../img/job-intro-bg.jpg");
+    background-position: -645px, center;
     background-size: cover, cover;
 
     @media (min-resolution: $retina-dpi),
