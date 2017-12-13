@@ -14,12 +14,12 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header" role="banner">
 
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Главное меню">
         <div class="container main-nav__container">
           <div class="main-nav__logo">
-            <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50">
+            <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50" alt="Прядки в порядке">
           </div>
           <span class="main-nav__toggle"></span>
           <ul class="main-nav__menu list">
@@ -42,7 +42,7 @@
           <div class="main-nav__contact">
             <b class="main-nav__tel">8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22</b>
             <div class="main-nav__city city-select">
-              <form class="city-select__form">
+              <form class="city-select__form" role="form" aria-label="Выбор города">
                 <select class="city-select__dropdown">
                   <option value="Ижевск" selected>Ижевск</option>
                   <option value="Москва">Москва</option>
@@ -55,7 +55,7 @@
         </div>
       </nav>
 
-      <section class="intro">
+      <section class="intro" role="region" aria-label="Вводная часть страницы с фотографией салона">
         <div class="container">
           <div class="intro__container">
             <b class="intro__headline">Больше, чем просто стрижки</b>
@@ -67,11 +67,11 @@
 
     </header>
 
-    <main class="page-main">
+    <main class="page-main" role="main">
 
       <h1 class="visually-hidden">Прядки в Порядке - парикмахерские в Ижевске</h1>
 
-      <section class="promo">
+      <section class="promo" role="region" aria-label="Скидки и акции">
         <div class="container promo__container">
           <h2 class="visually-hidden">Прядки в Порядке - скидки и акции</h2>
           <div class="promo__current current">
@@ -101,7 +101,7 @@
         </div>
       </section>
 
-      <section class="price">
+      <section class="price" role="region" aria-label="Услуги и цены">
         <div class="container">
           <h2 class="price__headline headline">Услуги и цены</h3>
           <div class="price__body">
@@ -1876,13 +1876,13 @@
         </div>
       </section>
 
-      <section class="nearest">
+      <section class="nearest" role="region" aria-label="Ближайший салон и карта">
         <div class="container">
           <header class="nearest__header">
             <h2 class="nearest__headline headline">Найдите ближайший от вас салон</h2>
           </header>
           <div class="nearest__city city-select">
-            <form class="city-select__form">
+            <form class="city-select__form" role="form" aria-label="Выбор города для поиска ближайшего салона">
               <select class="city-select__dropdown">
                 <option value="Ижевск" selected>Ижевск</option>
                 <option value="Москва">Москва</option>
@@ -1892,7 +1892,7 @@
             </form>
           </div>
           <h5 class="nearest__subline">Выберите направление:</h5>
-          <form class="nearest__list">
+          <form class="nearest__list" role="form" aria-label="Выбор категории услуг">
             <div class="nearest__group">
               <input class="nearest__input visually-hidden" type="checkbox" id="hairdressing" name="hairdressing" checked>
               <label class="nearest__item nearest__item--hairdressing" for="hairdressing">Парикмахерская</label>
@@ -1928,7 +1928,7 @@
           </form>
           <h5 class="nearest__subline">Салоны, которые вам подходят:</h5>
           <div class="nearest__saloons saloons">
-            <form class="saloons__loci">
+            <form class="saloons__loci" role="form" aria-label="Список салонов рядом с вами">
               <div class="saloons__group">
                 <input class="saloons__input visually-hidden" type="radio" id="address-1" name="saloons" checked>
                 <label class="saloons__locus" for="address-1">
@@ -1968,7 +1968,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback" role="region" aria-label="Отзывы посетителей">
         <div class="container">
           <h2 class="feedback__headline headline">Отзывы</h2>
           <div class="feedback__rating rating">
@@ -2026,7 +2026,7 @@
             <div class="feedback__popup popup">
               <button class="feedback__close popup__close unbutton" id="leave-feedback-close"></button>
               <h3 class="popup__headline headline">Оставьте свой отзыв</h3>
-              <form class="feedback__form form">
+              <form class="feedback__form form" role="form" aria-label="Оставить отзыв">
                 <div class="feedback__block form__block">
                   <div class="feedback__group form__group">
                     <input class="feedback__input form__input" id="name" type="text" placeholder="&nbsp;" value="" minlength="2" title="Минимум 2 символа!" required>
@@ -2077,7 +2077,7 @@
         </div>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" role="region" aria-label="Социальные сети">
         <h2 class="visually-hidden">Прядки в Порядке - следите за нами в соцсетях</h2>
         <div class="container subscription__container">
           <div class="subscription__instagram">
@@ -2093,15 +2093,13 @@
         </div>
       </section>
 
-      <section class="secret-shopper">
+      <section class="secret-shopper" role="region" aria-label="Записаться в тайные покупатели">
         <div class="container">
           <h2 class="secret-shopper__headline headline">Помогите нам стать лучше!</h2>
           <p class="secret-shopper__subline">Запишитесь в "тайные покупатели" и проведите проверку вашей любимой парикмахерской. Вознаграждение гарантируем!</p>
-          <form class="secret-shopper__form" method="post">
+          <form class="secret-shopper__form" method="post" role="form" aria-label="Форма записи в тайные покупатели">
             <div class="secret-shopper__inputs">
               <div class="secret-shopper__group">
-                <!-- input class="secret-shopper__input" type="text" id="office" name="office" value="" placeholder="&nbsp;" required>
-                <label class="secret-shopper__label" for="office">Выберите офис</label -->
                 <select class="secret-shopper__select" id="office-select">
                   <option selected disabled hidden>Выберите офис</option>
                   <option value="Ленина">на Ленина</option>
@@ -2135,9 +2133,9 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" role="contentinfo">
 
-      <section class="footer">
+      <section class="footer" role="navigation" aria-label="Навигация по разделам сайта">
         <div class="container footer__container">
           <div class="footer__block footer__block--service">
             <h5 class="footer__headline">Услуги</h5>
@@ -2193,9 +2191,9 @@
         </div>
       </section>
 
-      <section class="bottom">
+      <section class="bottom" role="navigation" aria-label="Ссылки на главную и соцсети">
         <div class="container bottom__container">
-          <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
+          <img class="bottom__logo" src="img/logo.svg" width="265" height="50" alt="Прядки в порядке">
           <div class="bottom__social">
             <span class="bottom__text">Мы в социальных сетях: </span>
             <ul class="bottom__list social list">

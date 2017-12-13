@@ -332,6 +332,11 @@
     font-size: 14px;
     color: #a0a0a0;
   }
+
+  .form__input ~ label > span,
+  .form__message ~ label > span {
+    display: none;
+  }
 }
 
 .form__group--rating {

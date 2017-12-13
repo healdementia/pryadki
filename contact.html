@@ -14,13 +14,13 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header" role="banner">
 
-      <nav class="main-nav main-nav--border">
+      <nav class="main-nav main-nav--border" role="navigation" aria-label="Главное меню">
         <div class="container main-nav__container">
           <div class="main-nav__logo">
-            <a href="index.html">
-              <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50">
+            <a href="index.html" title="На главную">
+              <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50" alt="Прядки в порядке">
             </a>
           </div>
           <span class="main-nav__toggle"></span>
@@ -44,7 +44,7 @@
           <div class="main-nav__contact">
             <b class="main-nav__tel">8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22</b>
             <div class="main-nav__city city-select">
-              <form class="city-select__form">
+              <form class="city-select__form" role="form" aria-label="Выбор города">
                 <select class="city-select__dropdown">
                   <option value="Ижевск" selected>Ижевск</option>
                   <option value="Москва">Москва</option>
@@ -59,9 +59,9 @@
 
     </header>
 
-    <main class="page-main">
+    <main class="page-main" role="main">
 
-      <section class="contact">
+      <section class="contact" role="region" aria-label="Контакты отделов">
         <div class="container">
           <h1 class="contact__headline headline">Контакты</h1>
           <p class="contact__subline">Есть вопросы? Позвоните нам.<br>Телефон горячей линии: <a  href="tel:+7(800)555-22-22">8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22</a><br>(звонок бесплатный для всех регионов&nbsp;РФ)</p>
@@ -88,7 +88,7 @@
             </li>
           </ul>
           <div class="contact__main-office main-office">
-            <img class="main-office__bearded-man" src="img/bearded-man.svg" width="301" height="470">
+            <img class="main-office__bearded-man" src="img/bearded-man.svg" width="301" height="470" alt="Нарисованный мужчина с красивой длинной бородой">
             <h5 class="main-office__headline">Главный офис</h5>
             <p class="main-office__info">Телефон: <a href="tel:+7(3412)33-33-33">+7&nbsp;(3412)&nbsp;33&nbsp;33&nbsp;33</a></p>
             <p class="main-office__info">Почтовый адрес:<br>426000, г.&nbsp;Ижевск, ул.&nbsp;Пушкинская, д.&nbsp;123, оф.&nbsp;456</p>
@@ -96,7 +96,7 @@
         </div>
       </section>
 
-      <section class="letter">
+      <section class="letter" role="region" aria-label="Обратная связь">
         <div class="container">
           <h5 class="letter__headline">Вы можете отправить своё сообщение:</h5>
           <form class="letter__form form">
@@ -139,9 +139,9 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" role="contentinfo">
 
-      <section class="footer">
+      <section class="footer" role="navigation" aria-label="Навигация по разделам сайта">
         <div class="container footer__container">
           <div class="footer__block footer__block--service">
             <h5 class="footer__headline">Услуги</h5>
@@ -197,10 +197,10 @@
         </div>
       </section>
 
-      <section class="bottom">
+      <section class="bottom" role="navigation" aria-label="Ссылки на главную и соцсети">
         <div class="container bottom__container">
-          <a href="index.html">
-            <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
+          <a href="index.html" title="На главную">
+            <img class="bottom__logo" src="img/logo.svg" width="265" height="50" alt="Прядки в порядке">
           </a>
           <div class="bottom__social">
             <span class="bottom__text">Мы в социальных сетях: </span>

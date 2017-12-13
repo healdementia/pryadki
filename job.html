@@ -14,13 +14,13 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header" role="banner">
 
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Главное меню">
         <div class="container main-nav__container">
           <div class="main-nav__logo">
-            <a href="index.html">
-              <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50">
+            <a href="index.html" title="На главную">
+              <img class="main-nav__logo-pic" src="img/logo.svg" width="265" height="50" alt="Прядки в порядке">
             </a>
           </div>
           <span class="main-nav__toggle"></span>
@@ -44,7 +44,7 @@
           <div class="main-nav__contact">
             <b class="main-nav__tel">8&nbsp;(800)&nbsp;555&nbsp;22&nbsp;22</b>
             <div class="main-nav__city city-select">
-              <form class="city-select__form">
+              <form class="city-select__form" role="form" aria-label="Выбор города">
                 <select class="city-select__dropdown">
                   <option value="Ижевск" selected>Ижевск</option>
                   <option value="Москва">Москва</option>
@@ -57,7 +57,7 @@
         </div>
       </nav>
 
-      <section class="intro intro--inner">
+      <section class="intro intro--inner" role="region" aria-label="Вводная часть страницы с фото салона">
         <div class="container">
           <div class="intro__container intro--inner__container">
             <b class="intro__headline intro--inner__headline">Работа в салонах красоты<br>&laquo;Прядки в порядке&raquo;</b>
@@ -68,9 +68,9 @@
 
     </header>
 
-    <main class="page-main">
+    <main class="page-main" role="main">
 
-      <section class="numbers">
+      <section class="numbers" role="region" aria-label="Прядки в порядке в цифрах">
         <div class="container">
           <h2 class="numbers__headline">&laquo;Прядки в порядке&raquo;&nbsp;&mdash; это:</h2>
           <ul class="numbers__list list">
@@ -87,7 +87,7 @@
         </div>
       </section>
 
-      <section class="reasons">
+      <section class="reasons" role="region" aria-label="Причины работать с нами">
         <div class="container">
           <h2 class="reasons__headline">3 причины,<br>по которым вам захочется у нас работать</h2>
           <ul class="reasons__list list">
@@ -107,12 +107,12 @@
         </div>
       </section>
 
-      <section class="vacancies">
+      <section class="vacancies" role="region" aria-label="Актуальные вакансии в вашем городе">
         <div class="container">
           <h2 class="vacancies__headline headline">Актуальные вакансии в городе:&nbsp;</h2>
           <div class="dropdown">
             <button class="dropdown__button unbutton" id="select-city" type="button">Ижевск</button>
-            <form class="dropdown__form" id="select-city-form">
+            <form class="dropdown__form" id="select-city-form" role="form" aria-label="Выберите ваш город">
               <div class="dropdown__group">
                 <input class="dropdown__input visually-hidden" type="radio" id="city-1" name="select-city" value="Ижевск" onclick="check()" checked>
                 <label class="dropdown__label" for="city-1">Ижевск</label>
@@ -256,7 +256,7 @@
             <div class="vacancies__popup">
               <button class="vacancies__close unbutton unbutton--close" id="send-cv-close"></button>
               <h3 class="vacancies__call-to-action">Вы можете отправить своё готовое резюме или создать его прямо сейчас!</h3>
-              <form class="vacancies__form form">
+              <form class="vacancies__form form" role="form" aria-label="Отправить или создать резюме">
                 <div class="vacancies__half form__half">
                   <fieldset class="vacancies__fieldset form__fieldset">
                     <legend class="vacancies__legend form__legend">Нажмите, чтобы загрузить резюме:</legend>
@@ -309,7 +309,7 @@
         </div>
       </section>
 
-      <section class="nearest nearest--inner">
+      <section class="nearest nearest--inner" role="region" aria-label="Салоны Прядки в порядке в вашем городе">
         <div class="container">
           <h2 class="nearest__headline nearest--inner__headline">Расположение наших парикмахерских в городе Ижевск</h2>
           <p class="nearest__subline nearest--inner__subline">Открытых салонов в вашем городе: <span>3</span></p>
@@ -354,7 +354,7 @@
         </div>
       </section>
 
-      <section class="no-vacancy">
+      <section class="no-vacancy" role="region" aria-label="Если вы не нашли подходящую вакансию">
         <div class="container">
           <h2 class="no-vacancy__headline headline">Не нашли интересующую вас вакансию?</h2>
           <p class="no-vacancy__subline">Отправьте ваше резюме на почту: <a class="no-vacancy__link" href="mailto:hr77_02@beauteam.ru">hr77_02@beauteam.ru</a><br>или позвоните по телефону: <a class="no-vacancy__link" href="tel:+7(916)439-70-61">+7&nbsp;(916)&nbsp;439-70-61</a></p>
@@ -363,9 +363,9 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" role="contentinfo">
 
-      <section class="footer">
+      <section class="footer" role="navigation" aria-label="Навигация по разделам сайта">
         <div class="container footer__container">
           <div class="footer__block footer__block--service">
             <h5 class="footer__headline">Услуги</h5>
@@ -421,10 +421,10 @@
         </div>
       </section>
 
-      <section class="bottom">
+      <section class="bottom" role="navigation" aria-label="Ссылки на главную и соцсети">
         <div class="container bottom__container">
-          <a href="index.html">
-            <img class="bottom__logo" src="img/logo.svg" width="265" height="50">
+          <a href="index.html" title="На главную">
+            <img class="bottom__logo" src="img/logo.svg" width="265" height="50" alt="Прядки в порядке">
           </a>
           <div class="bottom__social">
             <span class="bottom__text">Мы в социальных сетях: </span>
