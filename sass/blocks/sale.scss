@@ -23,25 +23,8 @@
   width: 570px;
   margin-bottom: 30px;
 
-  &:hover {
-    background-color: darken(#fafafa, 1%);
-    cursor: pointer;
-  }
-
   &:last-of-type {
     margin-bottom: 30px;
-  }
-}
-
-.sale__item--current {
-  background-color: $text-color;
-
-  &:hover {
-    background-color: lighten($text-color, 5%);
-  }
-
-  & span {
-    color: #ffffff;
   }
 }
 

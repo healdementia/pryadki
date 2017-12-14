@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+.permanent__list {
+  &--no-events {
+    pointer-events: none;
+  }
+}
+
 .permanent__item {
   width: 100%;
   min-height: 173px;
@@ -12,6 +18,11 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: $text-color;
+    cursor: pointer;
   }
 }
 
@@ -60,6 +71,22 @@
     background-image: url("../img/icon-heart-drawing.svg");
     background-position: 18px center;
     background-size: 90px 80px;
+  }
+}
+
+.permanent__item:hover .permanent__info {
+  color: #ffffff;
+
+  &--sale {
+    background-image: url("../img/icon-sale-hover.svg");
+  }
+
+  &--scissors {
+    background-image: url("../img/icon-scissors-hover.svg");
+  }
+
+  &--birthday {
+    background-image: url("../img/icon-birthday-hover.svg");
   }
 }
 
